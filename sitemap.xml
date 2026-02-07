@@ -2,69 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.alexsun.one/</loc>
+    <loc>https://sunisalex.github.io/posts/aboutthissite/</loc>
+    <lastmod>2026-02-02T16:36:28+08:00</lastmod>
+  </url><url>
+    <loc>https://sunisalex.github.io/</loc>
+    <lastmod>2026-02-06T10:51:13+08:00</lastmod>
+  </url><url>
+    <loc>https://sunisalex.github.io/posts/http_response_status_code/</loc>
+    <lastmod>2026-02-06T10:51:13+08:00</lastmod>
+  </url><url>
+    <loc>https://sunisalex.github.io/posts/</loc>
+    <lastmod>2026-02-06T10:51:13+08:00</lastmod>
+  </url><url>
+    <loc>https://sunisalex.github.io/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
+    <lastmod>2026-02-06T10:51:13+08:00</lastmod>
+  </url><url>
+    <loc>https://sunisalex.github.io/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2026-02-06T10:51:13+08:00</lastmod>
+  </url><url>
+    <loc>https://sunisalex.github.io/tags/linux/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/tags/linux/</loc>
+    <loc>https://sunisalex.github.io/categories/linux%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/categories/linux%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://sunisalex.github.io/tags/nginx/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/tags/nginx/</loc>
+    <loc>https://sunisalex.github.io/posts/nginx_conf/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/nginx_conf/</loc>
+    <loc>https://sunisalex.github.io/tags/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/</loc>
-    <lastmod>2026-02-05T10:47:08+08:00</lastmod>
-  </url><url>
-    <loc>https://www.alexsun.one/tags/</loc>
-    <lastmod>2026-02-05T10:47:08+08:00</lastmod>
-  </url><url>
-    <loc>https://www.alexsun.one/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
-    <lastmod>2026-02-05T10:47:08+08:00</lastmod>
-  </url><url>
-    <loc>https://www.alexsun.one/categories/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2026-02-05T10:47:08+08:00</lastmod>
-  </url><url>
-    <loc>https://www.alexsun.one/categories/ai/</loc>
+    <loc>https://sunisalex.github.io/categories/ai/</loc>
     <lastmod>2026-02-04T22:59:20+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/available_prompts/</loc>
+    <loc>https://sunisalex.github.io/posts/available_prompts/</loc>
     <lastmod>2026-02-04T22:59:20+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://sunisalex.github.io/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2026-02-03T10:35:29+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/20260202%E8%AF%AD%E6%B3%95%E5%A1%AB%E7%A9%BA/</loc>
+    <loc>https://sunisalex.github.io/posts/20260202%E8%AF%AD%E6%B3%95%E5%A1%AB%E7%A9%BA/</loc>
     <lastmod>2026-02-02T22:17:46+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/categories/english/</loc>
+    <loc>https://sunisalex.github.io/categories/english/</loc>
     <lastmod>2026-02-02T22:17:46+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/tags/hugo/</loc>
+    <loc>https://sunisalex.github.io/tags/hugo/</loc>
     <lastmod>2026-02-02T16:36:28+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/aboutthissite/</loc>
-    <lastmod>2026-02-02T16:36:28+08:00</lastmod>
-  </url><url>
-    <loc>https://www.alexsun.one/posts/markdown/</loc>
+    <loc>https://sunisalex.github.io/posts/markdown/</loc>
     <lastmod>2026-02-02T15:49:00+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/basicmath/</loc>
+    <loc>https://sunisalex.github.io/posts/basicmath/</loc>
     <lastmod>2026-02-02T15:01:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://sunisalex.github.io/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2026-02-02T15:01:08+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/categories/</loc>
+    <loc>https://sunisalex.github.io/categories/</loc>
     <lastmod>2026-02-02T14:06:17+08:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/posts/hugo/</loc>
+    <loc>https://sunisalex.github.io/posts/hugo/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.alexsun.one/search/</loc>
+    <loc>https://sunisalex.github.io/search/</loc>
   </url>
 </urlset>

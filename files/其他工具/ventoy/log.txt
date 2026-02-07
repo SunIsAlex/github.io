@@ -1,0 +1,731 @@
+[2021/12/25 08:03:08.136] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2021/12/25 08:03:08.136] Current directory:<D>
+[2021/12/25 08:03:08.141] id=9796/2616
+[2021/12/25 08:03:08.141]
+[2021/12/25 08:03:08.141] PSize:<577536 564KB>
+[2021/12/25 08:03:08.141] Lunch main process 0
+[2021/12/25 08:03:08.141] Control Flag: 0 1 1
+[2021/12/25 08:03:08.141] Windows Version: <<Windows 10 Pro, 64-bit (Build 19042.508)>>
+[2021/12/25 08:03:08.141] 
+===================== Enum All PhyDrives =====================
+[2021/12/25 08:03:08.146] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2021/12/25 08:03:08.146] RegQueryValueExA <Count> ret:0  Size:4 Value:3
+[2021/12/25 08:03:08.146] GetPhysicalDriveCount: 3
+[2021/12/25 08:03:08.146] Logical Drives: 0x7c
+[2021/12/25 08:03:08.146] LogicalDrive:\\.\C: PhyDrive:2 Offset:450887680 ExtentLength:119583219200
+[2021/12/25 08:03:08.146] C --> 2
+[2021/12/25 08:03:08.146] LogicalDrive:\\.\D: PhyDrive:1 Offset:37581336576 ExtentLength:238385032704
+[2021/12/25 08:03:08.146] D --> 1
+[2021/12/25 08:03:08.146] LogicalDrive:\\.\E: PhyDrive:1 Offset:275966401536 ExtentLength:237307521024
+[2021/12/25 08:03:08.146] E --> 1
+[2021/12/25 08:03:08.146] LogicalDrive:\\.\F: PhyDrive:1 Offset:513273954816 ExtentLength:236879806464
+[2021/12/25 08:03:08.146] F --> 1
+[2021/12/25 08:03:08.146] LogicalDrive:\\.\G: PhyDrive:0 Offset:1048576 ExtentLength:320071532544
+[2021/12/25 08:03:08.146] G --> 0
+[2021/12/25 08:03:08.151] Create file Handle:00000190 \\.\PhysicalDrive0 status:0
+[2021/12/25 08:03:08.151] PHYSICALDRIVE0 size 320072933376 bytes
+[2021/12/25 08:03:08.151] Create file Handle:00000194 \\.\PhysicalDrive1 status:0
+[2021/12/25 08:03:08.151] PHYSICALDRIVE1 size 750156374016 bytes
+[2021/12/25 08:03:08.151] Create file Handle:00000194 \\.\PhysicalDrive2 status:0
+[2021/12/25 08:03:08.151] PHYSICALDRIVE2 size 120034123776 bytes
+[2021/12/25 08:03:08.151] PhyDrv:0 BusType:SATA Removable:0 Size:320GB(320072933376) Name: WDC WD3200BEVT-00A23T0
+[2021/12/25 08:03:08.151] PhyDrv:1 BusType:SATA Removable:0 Size:750GB(750156374016) Name: ST750LM022 HN-M750MBB
+[2021/12/25 08:03:08.151] PhyDrv:2 BusType:SATA Removable:0 Size:120GB(120034123776) Name: ShineDisk M667 120G
+[2021/12/25 08:03:08.151] LogicalDrive:\\.\C: PhyDrive:2 Offset:450887680 ExtentLength:119583219200
+[2021/12/25 08:03:08.151] Logical Drive:C  ===> PhyDrive:2
+[2021/12/25 08:03:08.151] LogicalDrive:\\.\D: PhyDrive:1 Offset:37581336576 ExtentLength:238385032704
+[2021/12/25 08:03:08.151] Logical Drive:D  ===> PhyDrive:1
+[2021/12/25 08:03:08.151] LogicalDrive:\\.\E: PhyDrive:1 Offset:275966401536 ExtentLength:237307521024
+[2021/12/25 08:03:08.151] Logical Drive:E  ===> PhyDrive:1
+[2021/12/25 08:03:08.151] LogicalDrive:\\.\F: PhyDrive:1 Offset:513273954816 ExtentLength:236879806464
+[2021/12/25 08:03:08.151] Logical Drive:F  ===> PhyDrive:1
+[2021/12/25 08:03:08.151] LogicalDrive:\\.\G: PhyDrive:0 Offset:1048576 ExtentLength:320071532544
+[2021/12/25 08:03:08.151] Logical Drive:G  ===> PhyDrive:0
+[2021/12/25 08:03:08.151] < WDC WD3200BEVT-00A23T0> is filtered for not USB type.
+[2021/12/25 08:03:08.151] < ST750LM022 HN-M750MBB> is filtered for not USB type.
+[2021/12/25 08:03:08.151] < ShineDisk M667 120G> is filtered for not USB type.
+[2021/12/25 08:03:08.181] Load languages from json file ...
+[2021/12/25 08:03:08.201] language json file len:190384 json parse:0
+[2021/12/25 08:03:08.201] Total 43 languages ...
+[2021/12/25 08:03:20.426] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2021/12/25 08:03:20.426] Current directory:<D>
+[2021/12/25 08:03:20.426] id=9280/2616
+[2021/12/25 08:03:20.426]
+[2021/12/25 08:03:20.426] PSize:<577536 564KB>
+[2021/12/25 08:03:20.426] Lunch main process 0
+[2021/12/25 08:03:20.426] Control Flag: 0 1 1
+[2021/12/25 08:03:20.426] Windows Version: <<Windows 10 Pro, 64-bit (Build 19042.508)>>
+[2021/12/25 08:03:20.426] 
+===================== Enum All PhyDrives =====================
+[2021/12/25 08:03:20.426] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2021/12/25 08:03:20.426] RegQueryValueExA <Count> ret:0  Size:4 Value:3
+[2021/12/25 08:03:20.426] GetPhysicalDriveCount: 3
+[2021/12/25 08:03:20.426] Logical Drives: 0x7c
+[2021/12/25 08:03:20.426] LogicalDrive:\\.\C: PhyDrive:2 Offset:450887680 ExtentLength:119583219200
+[2021/12/25 08:03:20.426] C --> 2
+[2021/12/25 08:03:20.426] LogicalDrive:\\.\D: PhyDrive:1 Offset:37581336576 ExtentLength:238385032704
+[2021/12/25 08:03:20.426] D --> 1
+[2021/12/25 08:03:20.426] LogicalDrive:\\.\E: PhyDrive:1 Offset:275966401536 ExtentLength:237307521024
+[2021/12/25 08:03:20.426] E --> 1
+[2021/12/25 08:03:20.426] LogicalDrive:\\.\F: PhyDrive:1 Offset:513273954816 ExtentLength:236879806464
+[2021/12/25 08:03:20.426] F --> 1
+[2021/12/25 08:03:20.426] LogicalDrive:\\.\G: PhyDrive:0 Offset:1048576 ExtentLength:320071532544
+[2021/12/25 08:03:20.426] G --> 0
+[2021/12/25 08:03:20.426] Create file Handle:00000198 \\.\PhysicalDrive0 status:0
+[2021/12/25 08:03:20.441] PHYSICALDRIVE0 size 320072933376 bytes
+[2021/12/25 08:03:20.441] Create file Handle:00000198 \\.\PhysicalDrive1 status:0
+[2021/12/25 08:03:20.441] PHYSICALDRIVE1 size 750156374016 bytes
+[2021/12/25 08:03:20.441] Create file Handle:000000EC \\.\PhysicalDrive2 status:0
+[2021/12/25 08:03:20.441] PHYSICALDRIVE2 size 120034123776 bytes
+[2021/12/25 08:03:20.441] PhyDrv:0 BusType:SATA Removable:0 Size:320GB(320072933376) Name: WDC WD3200BEVT-00A23T0
+[2021/12/25 08:03:20.441] PhyDrv:1 BusType:SATA Removable:0 Size:750GB(750156374016) Name: ST750LM022 HN-M750MBB
+[2021/12/25 08:03:20.441] PhyDrv:2 BusType:SATA Removable:0 Size:120GB(120034123776) Name: ShineDisk M667 120G
+[2021/12/25 08:03:20.441] LogicalDrive:\\.\C: PhyDrive:2 Offset:450887680 ExtentLength:119583219200
+[2021/12/25 08:03:20.441] Logical Drive:C  ===> PhyDrive:2
+[2021/12/25 08:03:20.441] LogicalDrive:\\.\D: PhyDrive:1 Offset:37581336576 ExtentLength:238385032704
+[2021/12/25 08:03:20.441] Logical Drive:D  ===> PhyDrive:1
+[2021/12/25 08:03:20.441] LogicalDrive:\\.\E: PhyDrive:1 Offset:275966401536 ExtentLength:237307521024
+[2021/12/25 08:03:20.441] Logical Drive:E  ===> PhyDrive:1
+[2021/12/25 08:03:20.441] LogicalDrive:\\.\F: PhyDrive:1 Offset:513273954816 ExtentLength:236879806464
+[2021/12/25 08:03:20.441] Logical Drive:F  ===> PhyDrive:1
+[2021/12/25 08:03:20.441] LogicalDrive:\\.\G: PhyDrive:0 Offset:1048576 ExtentLength:320071532544
+[2021/12/25 08:03:20.441] Logical Drive:G  ===> PhyDrive:0
+[2021/12/25 08:03:20.441] < WDC WD3200BEVT-00A23T0> is filtered for not USB type.
+[2021/12/25 08:03:20.441] < ST750LM022 HN-M750MBB> is filtered for not USB type.
+[2021/12/25 08:03:20.441] < ShineDisk M667 120G> is filtered for not USB type.
+[2021/12/25 08:03:20.473] Load languages from json file ...
+[2021/12/25 08:03:20.473] language json file len:190384 json parse:0
+[2021/12/25 08:03:20.473] Total 43 languages ...
+[2021/12/25 08:03:23.950] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2021/12/25 08:03:23.950] Current directory:<D>
+[2021/12/25 08:03:23.950] id=9456/2616
+[2021/12/25 08:03:23.950]
+[2021/12/25 08:03:23.950] PSize:<577536 564KB>
+[2021/12/25 08:03:23.950] Lunch main process 0
+[2021/12/25 08:03:23.950] Control Flag: 0 1 1
+[2021/12/25 08:03:23.950] Windows Version: <<Windows 10 Pro, 64-bit (Build 19042.508)>>
+[2021/12/25 08:03:23.950] 
+===================== Enum All PhyDrives =====================
+[2021/12/25 08:03:23.950] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2021/12/25 08:03:23.966] RegQueryValueExA <Count> ret:0  Size:4 Value:3
+[2021/12/25 08:03:23.966] GetPhysicalDriveCount: 3
+[2021/12/25 08:03:23.966] Logical Drives: 0x7c
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\C: PhyDrive:2 Offset:450887680 ExtentLength:119583219200
+[2021/12/25 08:03:23.966] C --> 2
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\D: PhyDrive:1 Offset:37581336576 ExtentLength:238385032704
+[2021/12/25 08:03:23.966] D --> 1
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\E: PhyDrive:1 Offset:275966401536 ExtentLength:237307521024
+[2021/12/25 08:03:23.966] E --> 1
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\F: PhyDrive:1 Offset:513273954816 ExtentLength:236879806464
+[2021/12/25 08:03:23.966] F --> 1
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\G: PhyDrive:0 Offset:1048576 ExtentLength:320071532544
+[2021/12/25 08:03:23.966] G --> 0
+[2021/12/25 08:03:23.966] Create file Handle:00000190 \\.\PhysicalDrive0 status:0
+[2021/12/25 08:03:23.966] PHYSICALDRIVE0 size 320072933376 bytes
+[2021/12/25 08:03:23.966] Create file Handle:00000198 \\.\PhysicalDrive1 status:0
+[2021/12/25 08:03:23.966] PHYSICALDRIVE1 size 750156374016 bytes
+[2021/12/25 08:03:23.966] Create file Handle:00000198 \\.\PhysicalDrive2 status:0
+[2021/12/25 08:03:23.966] PHYSICALDRIVE2 size 120034123776 bytes
+[2021/12/25 08:03:23.966] PhyDrv:0 BusType:SATA Removable:0 Size:320GB(320072933376) Name: WDC WD3200BEVT-00A23T0
+[2021/12/25 08:03:23.966] PhyDrv:1 BusType:SATA Removable:0 Size:750GB(750156374016) Name: ST750LM022 HN-M750MBB
+[2021/12/25 08:03:23.966] PhyDrv:2 BusType:SATA Removable:0 Size:120GB(120034123776) Name: ShineDisk M667 120G
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\C: PhyDrive:2 Offset:450887680 ExtentLength:119583219200
+[2021/12/25 08:03:23.966] Logical Drive:C  ===> PhyDrive:2
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\D: PhyDrive:1 Offset:37581336576 ExtentLength:238385032704
+[2021/12/25 08:03:23.966] Logical Drive:D  ===> PhyDrive:1
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\E: PhyDrive:1 Offset:275966401536 ExtentLength:237307521024
+[2021/12/25 08:03:23.966] Logical Drive:E  ===> PhyDrive:1
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\F: PhyDrive:1 Offset:513273954816 ExtentLength:236879806464
+[2021/12/25 08:03:23.966] Logical Drive:F  ===> PhyDrive:1
+[2021/12/25 08:03:23.966] LogicalDrive:\\.\G: PhyDrive:0 Offset:1048576 ExtentLength:320071532544
+[2021/12/25 08:03:23.966] Logical Drive:G  ===> PhyDrive:0
+[2021/12/25 08:03:23.966] < WDC WD3200BEVT-00A23T0> is filtered for not USB type.
+[2021/12/25 08:03:23.966] < ST750LM022 HN-M750MBB> is filtered for not USB type.
+[2021/12/25 08:03:23.966] < ShineDisk M667 120G> is filtered for not USB type.
+[2021/12/25 08:03:23.997] Load languages from json file ...
+[2021/12/25 08:03:23.997] language json file len:190384 json parse:0
+[2021/12/25 08:03:23.997] Total 43 languages ...
+[2022/05/19 10:59:06.865] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2022/05/19 10:59:06.865] Current directory:<D>
+[2022/05/19 10:59:06.867] id=2656/6104
+[2022/05/19 10:59:06.867]
+[2022/05/19 10:59:06.867] PSize:<586752 573KB>
+[2022/05/19 10:59:06.868] Lunch main process 0
+[2022/05/19 10:59:06.868] Control Flag: 0 1 1
+[2022/05/19 10:59:06.868] Windows Version: <<Windows 10 Home China, 64-bit (Build 19043.1526)>>
+[2022/05/19 10:59:06.868] 
+===================== Enum All PhyDrives =====================
+[2022/05/19 10:59:06.868] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2022/05/19 10:59:06.868] RegQueryValueExA <Count> ret:0  Size:4 Value:1
+[2022/05/19 10:59:06.868] GetPhysicalDriveCount: 1
+[2022/05/19 10:59:06.868] Logical Drives: 0x100000c
+[2022/05/19 10:59:06.869] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/19 10:59:06.869] C --> 0
+[2022/05/19 10:59:06.869] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:403660865536
+[2022/05/19 10:59:06.869] D --> 0
+[2022/05/19 10:59:06.869] DeviceIoControl IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS failed \\.\Y:, error:1
+[2022/05/19 10:59:06.869] Y --> -1
+[2022/05/19 10:59:06.869] Create file Handle:000001A4 \\.\PhysicalDrive0 status:0
+[2022/05/19 10:59:06.869] PHYSICALDRIVE0 size 512110190592 bytes
+[2022/05/19 10:59:06.869] PhyDrv:0 BusType:Nvme Removable:0 Size:512GB(512110190592) Name: PM8512GPMCB27BTF-E13T2IAMS
+[2022/05/19 10:59:06.869] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/19 10:59:06.869] Logical Drive:C  ===> PhyDrive:0
+[2022/05/19 10:59:06.869] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:403660865536
+[2022/05/19 10:59:06.869] Logical Drive:D  ===> PhyDrive:0
+[2022/05/19 10:59:06.869] DeviceIoControl IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS failed \\.\Y:, error:1
+[2022/05/19 10:59:06.869] Logical Drive:Y  ===> PhyDrive:-1
+[2022/05/19 10:59:06.869] < PM8512GPMCB27BTF-E13T2IAMS> is filtered for not USB type.
+[2022/05/19 10:59:06.913] Load languages from json file ...
+[2022/05/19 10:59:06.915] language json file len:190384 json parse:0
+[2022/05/19 10:59:06.916] Total 43 languages ...
+[2022/05/19 10:59:08.745] #### Now Refresh PhyDrive ####
+[2022/05/19 10:59:08.745] 
+===================== Enum All PhyDrives =====================
+[2022/05/19 10:59:08.745] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2022/05/19 10:59:08.745] RegQueryValueExA <Count> ret:0  Size:4 Value:1
+[2022/05/19 10:59:08.745] GetPhysicalDriveCount: 1
+[2022/05/19 10:59:08.745] Logical Drives: 0x100000c
+[2022/05/19 10:59:08.746] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/19 10:59:08.746] C --> 0
+[2022/05/19 10:59:08.746] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:403660865536
+[2022/05/19 10:59:08.746] D --> 0
+[2022/05/19 10:59:08.746] DeviceIoControl IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS failed \\.\Y:, error:1
+[2022/05/19 10:59:08.746] Y --> -1
+[2022/05/19 10:59:08.746] Create file Handle:00000338 \\.\PhysicalDrive0 status:0
+[2022/05/19 10:59:08.746] PHYSICALDRIVE0 size 512110190592 bytes
+[2022/05/19 10:59:08.746] PhyDrv:0 BusType:Nvme Removable:0 Size:512GB(512110190592) Name: PM8512GPMCB27BTF-E13T2IAMS
+[2022/05/19 10:59:08.746] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/19 10:59:08.746] Logical Drive:C  ===> PhyDrive:0
+[2022/05/19 10:59:08.746] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:403660865536
+[2022/05/19 10:59:08.746] Logical Drive:D  ===> PhyDrive:0
+[2022/05/19 10:59:08.746] DeviceIoControl IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS failed \\.\Y:, error:1
+[2022/05/19 10:59:08.746] Logical Drive:Y  ===> PhyDrive:-1
+[2022/05/19 10:59:08.746] < PM8512GPMCB27BTF-E13T2IAMS> is filtered for not USB type.
+[2022/05/30 08:19:10.562] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2022/05/30 08:19:10.562] Current directory:<E>
+[2022/05/30 08:19:10.566] id=9420/3524
+[2022/05/30 08:19:10.566]
+[2022/05/30 08:19:10.566] PSize:<586752 573KB>
+[2022/05/30 08:19:10.566] Lunch main process 0
+[2022/05/30 08:19:10.566] Control Flag: 0 1 1
+[2022/05/30 08:19:10.567] Windows Version: <<Windows 10 (Unknown Edition), 64-bit (Build 19044.1379)>>
+[2022/05/30 08:19:10.567] 
+===================== Enum All PhyDrives =====================
+[2022/05/30 08:19:10.567] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2022/05/30 08:19:10.567] RegQueryValueExA <Count> ret:0  Size:4 Value:2
+[2022/05/30 08:19:10.567] GetPhysicalDriveCount: 2
+[2022/05/30 08:19:10.567] Logical Drives: 0x3c
+[2022/05/30 08:19:10.567] LogicalDrive:\\.\C: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 08:19:10.567] C --> 0
+[2022/05/30 08:19:10.568] LogicalDrive:\\.\D: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 08:19:10.568] D --> 0
+[2022/05/30 08:19:10.568] LogicalDrive:\\.\E: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 08:19:10.568] E --> 0
+[2022/05/30 08:19:10.573] LogicalDrive:\\.\F: PhyDrive:1 Offset:0 ExtentLength:0
+[2022/05/30 08:19:10.573] F --> 1
+[2022/05/30 08:19:10.573] Create file Handle:00000198 \\.\PhysicalDrive0 status:0
+[2022/05/30 08:19:10.573] PHYSICALDRIVE0 size 512110190592 bytes
+[2022/05/30 08:19:10.573] Create file Handle:00000198 \\.\PhysicalDrive1 status:0
+[2022/05/30 08:19:10.575] DeviceIoControl IOCTL_DISK_GET_LENGTH_INFO failed error:21
+[2022/05/30 08:19:10.575] PhyDrv:0 BusType:Nvme Removable:0 Size:512GB(512110190592) Name: PM8512GPMCB27BTF-E13T2IAMS
+[2022/05/30 08:19:10.575] LogicalDrive:\\.\C: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 08:19:10.575] Logical Drive:C  ===> PhyDrive:0
+[2022/05/30 08:19:10.575] LogicalDrive:\\.\D: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 08:19:10.575] Logical Drive:D  ===> PhyDrive:0
+[2022/05/30 08:19:10.575] LogicalDrive:\\.\E: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 08:19:10.575] Logical Drive:E  ===> PhyDrive:0
+[2022/05/30 08:19:10.579] LogicalDrive:\\.\F: PhyDrive:1 Offset:0 ExtentLength:0
+[2022/05/30 08:19:10.580] Logical Drive:F  ===> PhyDrive:1
+[2022/05/30 08:19:10.580] < PM8512GPMCB27BTF-E13T2IAMS> is filtered for not USB type.
+[2022/05/30 08:19:10.610] Load languages from json file ...
+[2022/05/30 08:19:10.612] language json file len:190384 json parse:0
+[2022/05/30 08:19:10.613] Total 43 languages ...
+[2022/05/30 08:19:23.248] #### Now Refresh PhyDrive ####
+[2022/05/30 08:19:23.248] 
+===================== Enum All PhyDrives =====================
+[2022/05/30 08:19:23.249] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2022/05/30 08:19:23.249] RegQueryValueExA <Count> ret:0  Size:4 Value:2
+[2022/05/30 08:19:23.249] GetPhysicalDriveCount: 2
+[2022/05/30 08:19:23.249] Logical Drives: 0x3c
+[2022/05/30 08:19:23.249] LogicalDrive:\\.\C: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 08:19:23.249] C --> 0
+[2022/05/30 08:19:23.249] LogicalDrive:\\.\D: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 08:19:23.250] D --> 0
+[2022/05/30 08:19:23.250] LogicalDrive:\\.\E: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 08:19:23.250] E --> 0
+[2022/05/30 08:19:23.254] LogicalDrive:\\.\F: PhyDrive:1 Offset:0 ExtentLength:0
+[2022/05/30 08:19:23.254] F --> 1
+[2022/05/30 08:19:23.255] Create file Handle:00000508 \\.\PhysicalDrive0 status:0
+[2022/05/30 08:19:23.255] PHYSICALDRIVE0 size 512110190592 bytes
+[2022/05/30 08:19:23.255] Create file Handle:00000508 \\.\PhysicalDrive1 status:0
+[2022/05/30 08:19:23.256] DeviceIoControl IOCTL_DISK_GET_LENGTH_INFO failed error:21
+[2022/05/30 08:19:23.256] PhyDrv:0 BusType:Nvme Removable:0 Size:512GB(512110190592) Name: PM8512GPMCB27BTF-E13T2IAMS
+[2022/05/30 08:19:23.257] LogicalDrive:\\.\C: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 08:19:23.257] Logical Drive:C  ===> PhyDrive:0
+[2022/05/30 08:19:23.257] LogicalDrive:\\.\D: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 08:19:23.257] Logical Drive:D  ===> PhyDrive:0
+[2022/05/30 08:19:23.257] LogicalDrive:\\.\E: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 08:19:23.257] Logical Drive:E  ===> PhyDrive:0
+[2022/05/30 08:19:23.261] LogicalDrive:\\.\F: PhyDrive:1 Offset:0 ExtentLength:0
+[2022/05/30 08:19:23.261] Logical Drive:F  ===> PhyDrive:1
+[2022/05/30 08:19:23.261] Create file Handle:0000050C \\.\PhysicalDrive0 status:0
+[2022/05/30 08:19:23.261] Read MBR Ret:1 Size:512 code:183
+[2022/05/30 08:19:23.262] =========== Disk0 GPT Partition 1 ============
+[2022/05/30 08:19:23.262] PartTbl.PartType = {c12a7328-f81f-11d2-ba4b-00a0c93ec93b}
+[2022/05/30 08:19:23.262] PartTbl.PartGuid = {04ba68cc-80da-4b3e-8f1e-f91f7bf33e4b}
+[2022/05/30 08:19:23.262] PartTbl.StartLBA = 2048
+[2022/05/30 08:19:23.262] PartTbl.LastLBA = 206847
+[2022/05/30 08:19:23.262] PartTbl.Attribute = 0x0
+[2022/05/30 08:19:23.262] PartTbl.Name = EFI system partition
+[2022/05/30 08:19:23.262] =========== Disk0 GPT Partition 2 ============
+[2022/05/30 08:19:23.262] PartTbl.PartType = {e3c9e316-0b5c-4db8-817d-f92df00215ae}
+[2022/05/30 08:19:23.262] PartTbl.PartGuid = {d7e9f2ae-45bb-4c9d-b724-b6eae75b5ee1}
+[2022/05/30 08:19:23.262] PartTbl.StartLBA = 206848
+[2022/05/30 08:19:23.262] PartTbl.LastLBA = 239615
+[2022/05/30 08:19:23.262] PartTbl.Attribute = 0x0
+[2022/05/30 08:19:23.262] PartTbl.Name = Microsoft reserved partition
+[2022/05/30 08:19:23.262] =========== Disk0 GPT Partition 3 ============
+[2022/05/30 08:19:23.262] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/05/30 08:19:23.262] PartTbl.PartGuid = {fd444c39-b35b-40e4-ba9c-9644f243ca96}
+[2022/05/30 08:19:23.262] PartTbl.StartLBA = 239616
+[2022/05/30 08:19:23.263] PartTbl.LastLBA = 209969151
+[2022/05/30 08:19:23.263] PartTbl.Attribute = 0x0
+[2022/05/30 08:19:23.263] PartTbl.Name = Basic data partition
+[2022/05/30 08:19:23.263] =========== Disk0 GPT Partition 4 ============
+[2022/05/30 08:19:23.263] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/05/30 08:19:23.263] PartTbl.PartGuid = {27600574-b0ec-4076-a00d-5df5c9f2f637}
+[2022/05/30 08:19:23.263] PartTbl.StartLBA = 209969152
+[2022/05/30 08:19:23.263] PartTbl.LastLBA = 872540159
+[2022/05/30 08:19:23.263] PartTbl.Attribute = 0x0
+[2022/05/30 08:19:23.263] PartTbl.Name = Basic data partition
+[2022/05/30 08:19:23.263] =========== Disk0 GPT Partition 5 ============
+[2022/05/30 08:19:23.263] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/05/30 08:19:23.263] PartTbl.PartGuid = {f1994735-02ec-4902-a3a0-0247e6498edb}
+[2022/05/30 08:19:23.263] PartTbl.StartLBA = 872540160
+[2022/05/30 08:19:23.263] PartTbl.LastLBA = 998371327
+[2022/05/30 08:19:23.263] PartTbl.Attribute = 0x0
+[2022/05/30 08:19:23.263] PartTbl.Name = Basic data partition
+[2022/05/30 08:19:23.263] =========== Disk0 GPT Partition 6 ============
+[2022/05/30 08:19:23.263] PartTbl.PartType = {de94bba4-06d1-4d40-a16a-bfd50179d6ac}
+[2022/05/30 08:19:23.263] PartTbl.PartGuid = {bba5487a-53ec-46bd-9c2f-b3d90956edb2}
+[2022/05/30 08:19:23.264] PartTbl.StartLBA = 998371328
+[2022/05/30 08:19:23.264] PartTbl.LastLBA = 1000214527
+[2022/05/30 08:19:23.264] PartTbl.Attribute = 0x1
+[2022/05/30 08:19:23.264] PartTbl.Name = Basic data partition
+[2022/05/30 08:19:23.264] Invalid ventoy efi part name <Microsoft reserved partition>
+[2022/05/30 08:19:23.266] Not ventoy disk, clear secure boot option
+[2022/05/30 11:29:14.284] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2022/05/30 11:29:14.300] Current directory:<D>
+[2022/05/30 11:29:14.300] id=9076/4920
+[2022/05/30 11:29:14.300]
+[2022/05/30 11:29:14.300] PSize:<586752 573KB>
+[2022/05/30 11:29:14.300] Lunch main process 0
+[2022/05/30 11:29:14.300] Control Flag: 0 1 1
+[2022/05/30 11:29:14.300] Windows Version: <<Windows 11 Enterprise, 64-bit (Build 22000.194)>>
+[2022/05/30 11:29:14.300] 
+===================== Enum All PhyDrives =====================
+[2022/05/30 11:29:14.300] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2022/05/30 11:29:14.300] RegQueryValueExA <Count> ret:0  Size:4 Value:2
+[2022/05/30 11:29:14.300] GetPhysicalDriveCount: 2
+[2022/05/30 11:29:14.300] Logical Drives: 0x3c
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 11:29:14.300] C --> 0
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 11:29:14.300] D --> 0
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\E: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 11:29:14.300] E --> 0
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\F: PhyDrive:1 Offset:314572800 ExtentLength:7375159296
+[2022/05/30 11:29:14.300] F --> 1
+[2022/05/30 11:29:14.300] Create file Handle:000001A8 \\.\PhysicalDrive0 status:0
+[2022/05/30 11:29:14.300] PHYSICALDRIVE0 size 512110190592 bytes
+[2022/05/30 11:29:14.300] Create file Handle:000001A8 \\.\PhysicalDrive1 status:0
+[2022/05/30 11:29:14.300] PHYSICALDRIVE1 size 8004304896 bytes
+[2022/05/30 11:29:14.300] PhyDrv:0 BusType:Nvme Removable:0 Size:512GB(512110190592) Name: PM8512GPMCB27BTF-E13T2IAMS
+[2022/05/30 11:29:14.300] PhyDrv:1 BusType:USB  Removable:0 Size:8GB(8004304896) Name:SanDisk Cruzer Blade
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 11:29:14.300] Logical Drive:C  ===> PhyDrive:0
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 11:29:14.300] Logical Drive:D  ===> PhyDrive:0
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\E: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 11:29:14.300] Logical Drive:E  ===> PhyDrive:0
+[2022/05/30 11:29:14.300] LogicalDrive:\\.\F: PhyDrive:1 Offset:314572800 ExtentLength:7375159296
+[2022/05/30 11:29:14.300] Logical Drive:F  ===> PhyDrive:1
+[2022/05/30 11:29:14.300] Create file Handle:000001A8 \\.\PhysicalDrive1 status:0
+[2022/05/30 11:29:14.300] Read MBR Ret:1 Size:512 code:183
+[2022/05/30 11:29:14.300] =========== Disk1 MBR Partition 1 ============
+[2022/05/30 11:29:14.300] PartTbl.Active = 0x80
+[2022/05/30 11:29:14.300] PartTbl.FsFlag = 0x7
+[2022/05/30 11:29:14.300] PartTbl.StartSectorId = 614400
+[2022/05/30 11:29:14.300] PartTbl.SectorCount = 14404608
+[2022/05/30 11:29:14.300] PartTbl.StartHead = 62
+[2022/05/30 11:29:14.300] PartTbl.StartSector = 25
+[2022/05/30 11:29:14.300] PartTbl.StartCylinder = 152
+[2022/05/30 11:29:14.300] PartTbl.EndHead = 226
+[2022/05/30 11:29:14.300] PartTbl.EndSector = 60
+[2022/05/30 11:29:14.300] PartTbl.EndCylinder = 667
+[2022/05/30 11:29:14.300] =========== Disk1 MBR Partition 2 ============
+[2022/05/30 11:29:14.300] PartTbl.Active = 0x0
+[2022/05/30 11:29:14.300] PartTbl.FsFlag = 0x16
+[2022/05/30 11:29:14.300] PartTbl.StartSectorId = 15020032
+[2022/05/30 11:29:14.300] PartTbl.SectorCount = 609279
+[2022/05/30 11:29:14.300] PartTbl.StartHead = 243
+[2022/05/30 11:29:14.300] PartTbl.StartSector = 14
+[2022/05/30 11:29:14.300] PartTbl.StartCylinder = 667
+[2022/05/30 11:29:14.300] PartTbl.EndHead = 224
+[2022/05/30 11:29:14.300] PartTbl.EndSector = 19
+[2022/05/30 11:29:14.300] PartTbl.EndCylinder = 819
+[2022/05/30 11:29:14.300] =========== Disk1 MBR Partition 3 ============
+[2022/05/30 11:29:14.300] PartTbl.Active = 0x0
+[2022/05/30 11:29:14.300] PartTbl.FsFlag = 0x0
+[2022/05/30 11:29:14.300] PartTbl.StartSectorId = 0
+[2022/05/30 11:29:14.300] PartTbl.SectorCount = 0
+[2022/05/30 11:29:14.300] PartTbl.StartHead = 0
+[2022/05/30 11:29:14.300] PartTbl.StartSector = 0
+[2022/05/30 11:29:14.300] PartTbl.StartCylinder = 0
+[2022/05/30 11:29:14.300] PartTbl.EndHead = 0
+[2022/05/30 11:29:14.300] PartTbl.EndSector = 0
+[2022/05/30 11:29:14.300] PartTbl.EndCylinder = 0
+[2022/05/30 11:29:14.300] =========== Disk1 MBR Partition 4 ============
+[2022/05/30 11:29:14.300] PartTbl.Active = 0x0
+[2022/05/30 11:29:14.300] PartTbl.FsFlag = 0x0
+[2022/05/30 11:29:14.300] PartTbl.StartSectorId = 0
+[2022/05/30 11:29:14.300] PartTbl.SectorCount = 0
+[2022/05/30 11:29:14.300] PartTbl.StartHead = 0
+[2022/05/30 11:29:14.300] PartTbl.StartSector = 0
+[2022/05/30 11:29:14.300] PartTbl.StartCylinder = 0
+[2022/05/30 11:29:14.300] PartTbl.EndHead = 0
+[2022/05/30 11:29:14.300] PartTbl.EndSector = 0
+[2022/05/30 11:29:14.300] PartTbl.EndCylinder = 0
+[2022/05/30 11:29:14.300] Part1 not match 614400
+[2022/05/30 11:29:14.300] Create file Handle:000001A8 \\.\PhysicalDrive0 status:0
+[2022/05/30 11:29:14.300] Read MBR Ret:1 Size:512 code:183
+[2022/05/30 11:29:14.300] =========== Disk0 GPT Partition 1 ============
+[2022/05/30 11:29:14.300] PartTbl.PartType = {c12a7328-f81f-11d2-ba4b-00a0c93ec93b}
+[2022/05/30 11:29:14.300] PartTbl.PartGuid = {04ba68cc-80da-4b3e-8f1e-f91f7bf33e4b}
+[2022/05/30 11:29:14.300] PartTbl.StartLBA = 2048
+[2022/05/30 11:29:14.300] PartTbl.LastLBA = 206847
+[2022/05/30 11:29:14.300] PartTbl.Attribute = 0x0
+[2022/05/30 11:29:14.300] PartTbl.Name = EFI system partition
+[2022/05/30 11:29:14.300] =========== Disk0 GPT Partition 2 ============
+[2022/05/30 11:29:14.300] PartTbl.PartType = {e3c9e316-0b5c-4db8-817d-f92df00215ae}
+[2022/05/30 11:29:14.300] PartTbl.PartGuid = {d7e9f2ae-45bb-4c9d-b724-b6eae75b5ee1}
+[2022/05/30 11:29:14.300] PartTbl.StartLBA = 206848
+[2022/05/30 11:29:14.300] PartTbl.LastLBA = 239615
+[2022/05/30 11:29:14.300] PartTbl.Attribute = 0x0
+[2022/05/30 11:29:14.300] PartTbl.Name = Microsoft reserved partition
+[2022/05/30 11:29:14.300] =========== Disk0 GPT Partition 3 ============
+[2022/05/30 11:29:14.300] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/05/30 11:29:14.300] PartTbl.PartGuid = {fd444c39-b35b-40e4-ba9c-9644f243ca96}
+[2022/05/30 11:29:14.300] PartTbl.StartLBA = 239616
+[2022/05/30 11:29:14.300] PartTbl.LastLBA = 209969151
+[2022/05/30 11:29:14.300] PartTbl.Attribute = 0x0
+[2022/05/30 11:29:14.300] PartTbl.Name = Basic data partition
+[2022/05/30 11:29:14.300] =========== Disk0 GPT Partition 4 ============
+[2022/05/30 11:29:14.300] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/05/30 11:29:14.300] PartTbl.PartGuid = {27600574-b0ec-4076-a00d-5df5c9f2f637}
+[2022/05/30 11:29:14.300] PartTbl.StartLBA = 209969152
+[2022/05/30 11:29:14.300] PartTbl.LastLBA = 872540159
+[2022/05/30 11:29:14.300] PartTbl.Attribute = 0x0
+[2022/05/30 11:29:14.300] PartTbl.Name = Basic data partition
+[2022/05/30 11:29:14.300] =========== Disk0 GPT Partition 5 ============
+[2022/05/30 11:29:14.300] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/05/30 11:29:14.300] PartTbl.PartGuid = {f1994735-02ec-4902-a3a0-0247e6498edb}
+[2022/05/30 11:29:14.300] PartTbl.StartLBA = 872540160
+[2022/05/30 11:29:14.300] PartTbl.LastLBA = 998371327
+[2022/05/30 11:29:14.300] PartTbl.Attribute = 0x0
+[2022/05/30 11:29:14.300] PartTbl.Name = Basic data partition
+[2022/05/30 11:29:14.300] =========== Disk0 GPT Partition 6 ============
+[2022/05/30 11:29:14.300] PartTbl.PartType = {de94bba4-06d1-4d40-a16a-bfd50179d6ac}
+[2022/05/30 11:29:14.300] PartTbl.PartGuid = {bba5487a-53ec-46bd-9c2f-b3d90956edb2}
+[2022/05/30 11:29:14.300] PartTbl.StartLBA = 998371328
+[2022/05/30 11:29:14.300] PartTbl.LastLBA = 1000214527
+[2022/05/30 11:29:14.300] PartTbl.Attribute = 0x1
+[2022/05/30 11:29:14.300] PartTbl.Name = Basic data partition
+[2022/05/30 11:29:14.300] Invalid ventoy efi part name <Microsoft reserved partition>
+[2022/05/30 11:29:14.347] Load languages from json file ...
+[2022/05/30 11:29:14.347] language json file len:190384 json parse:0
+[2022/05/30 11:29:14.347] Total 43 languages ...
+[2022/05/30 11:29:14.409] Not ventoy disk, clear secure boot option
+[2022/05/30 11:29:20.737] SpaceMB:0 SizeInMB:7633
+[2022/05/30 11:29:20.737] #####################################################
+[2022/05/30 11:29:20.737] InstallVentoy2PhyDrive try1 MBR PhyDrive1 <<SanDisk Cruzer Blade 8GB>>
+[2022/05/30 11:29:20.737] #####################################################
+[2022/05/30 11:29:20.752] Copy boot img success
+[2022/05/30 11:29:20.752] Disk signature: 0x2f422af0
+[2022/05/30 11:29:20.752] ReservedSector: 0
+[2022/05/30 11:29:20.752] Lock disk for clean ............................. 
+[2022/05/30 11:29:20.752] QueryDosDeviceA success \Device\Harddisk1\DR1
+[2022/05/30 11:29:20.752] [0] CreateFileA \\.\PhysicalDrive1 code:0 00000534
+[2022/05/30 11:29:20.752] FSCTL_LOCK_VOLUME success
+[2022/05/30 11:29:20.752] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 11:29:20.752] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 11:29:20.752] LogicalDrive:\\.\E: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 11:29:20.752] LogicalDrive:\\.\F: PhyDrive:1 Offset:314572800 ExtentLength:7375159296
+[2022/05/30 11:29:20.752] F: is belong to phydrive1
+[2022/05/30 11:29:20.752] Delete mountpoint F:\ ret:1 code:0
+[2022/05/30 11:29:20.752] Will use 'F:' as volume mountpoint
+[2022/05/30 11:29:22.158] VDS init OK, service 016D4434
+[2022/05/30 11:29:22.174] Callback 1 process for disk <\\?\PhysicalDrive1>
+[2022/05/30 11:29:22.174] Deleting ALL partitions from disk '\\?\PhysicalDrive1':
+[2022/05/30 11:29:22.174] * Partition 1 (offset: 314572800, size: 7375159296) delete it.
+[2022/05/30 11:29:22.205] Delete this partitions success
+[2022/05/30 11:29:22.205] * Partition 2 (offset: 7690256384, size: 311950848) delete it.
+[2022/05/30 11:29:22.221] Delete this partitions success
+[2022/05/30 11:29:22.221] VDS_DeleteAllPartitions 1 ret:1 (SUCCESS)
+[2022/05/30 11:29:22.221] Deleting all partitions ......................... OK
+[2022/05/30 11:29:22.221] Lock disk for write ............................. 
+[2022/05/30 11:29:22.221] QueryDosDeviceA success \Device\Harddisk1\DR1
+[2022/05/30 11:29:22.221] [0] CreateFileA \\.\PhysicalDrive1 code:0 00000594
+[2022/05/30 11:29:22.221] Opened \\.\PhysicalDrive1 for exclusive write access
+[2022/05/30 11:29:22.221] FSCTL_LOCK_VOLUME success
+[2022/05/30 11:29:22.221] Formatting part1 exFAT ...
+[2022/05/30 11:29:22.221] Formatting Part1 exFAT ...
+[2022/05/30 11:29:24.080] Formatting Part1 exFAT success
+[2022/05/30 11:29:24.080] Writing part2 FAT img ...
+[2022/05/30 11:29:24.080] FormatPart2Fat 15567872...
+[2022/05/30 11:29:24.096] Malloc whole img buffer success, now decompress ...
+[2022/05/30 11:29:24.658] decompress finished success
+[2022/05/30 11:29:24.658] VentoyProcSecureBoot 0 ...
+[2022/05/30 11:29:24.658] Open ventoy efi file 00620928 
+[2022/05/30 11:29:24.658] ventoy efi file size 1757184 ...
+[2022/05/30 11:29:24.658] Now delete all efi files ...
+[2022/05/30 11:29:24.658] Open bootx64 efi file 00620928 
+[2022/05/30 11:29:25.267] Open ventoy efi file 00620D6C 
+[2022/05/30 11:29:25.267] ventoy efi file size 1183744 ...
+[2022/05/30 11:29:25.267] Now delete all efi files ...
+[2022/05/30 11:29:25.267] Open bootia32 efi file 00620928 
+[2022/05/30 11:29:26.533] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:26.611] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:26.689] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:26.783] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:26.861] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:26.939] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.252] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.330] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.423] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.502] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.580] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.658] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.752] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.830] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:27.908] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.002] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.080] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.158] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.252] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.330] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.408] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.486] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.595] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.673] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.751] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.845] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:28.923] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:29.189] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:29.580] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:29.986] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:30.376] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:30.782] Write part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:30.829] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:30.876] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:30.923] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:30.970] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.001] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.048] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.095] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.157] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.204] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.251] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.298] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.345] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.392] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.439] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.486] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.532] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.579] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.626] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.673] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.720] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.767] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.798] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.845] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.892] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.939] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:31.985] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.032] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.079] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.126] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.157] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.204] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.235] Read part data bRet:1 dwSize:1048576 code:183
+[2022/05/30 11:29:32.235] Writing Boot Image ............................. 
+[2022/05/30 11:29:32.235] WriteGrubStage1ToPhyDrive ...
+[2022/05/30 11:29:32.267] Write MBR stage1 ...
+[2022/05/30 11:29:33.313] WriteFile Ret:1 dwSize:1048064 ErrCode:183
+[2022/05/30 11:29:33.313] Writing Partition Table ........................ 
+[2022/05/30 11:29:33.313] Write MBR OK ...
+[2022/05/30 11:29:33.313] Mounting Ventoy Partition ....................... 
+[2022/05/30 11:29:34.329] LogicalDrive:\\.\C: PhyDrive:0 Offset:122683392 ExtentLength:107381522432
+[2022/05/30 11:29:34.329] LogicalDrive:\\.\D: PhyDrive:0 Offset:107504205824 ExtentLength:339236356096
+[2022/05/30 11:29:34.329] LogicalDrive:\\.\E: PhyDrive:0 Offset:446740561920 ExtentLength:64425558016
+[2022/05/30 11:29:34.329] LogicalDrive:\\.\F: PhyDrive:1 Offset:1048576 ExtentLength:7969701888
+[2022/05/30 11:29:34.329] F: is belong to phydrive1
+[2022/05/30 11:29:34.329] LogicalDrive:\\.\G: PhyDrive:1 Offset:7970750464 ExtentLength:33554432
+[2022/05/30 11:29:34.329] G: is belong to phydrive1
+[2022/05/30 11:29:34.329] Logical drive letter after write ventoy: <FG>
+[2022/05/30 11:29:34.329] F:\ is ventoy part1, already mounted
+[2022/05/30 11:29:34.329] G:\ is ventoy part2, delete mountpoint
+[2022/05/30 11:29:34.329] OK
+
+[2022/05/30 11:29:35.704] Combox select change, update secure boot option: 0 0
+[2022/10/02 15:17:39.043] 
+##################################################################################
+######################### Ventoy2DiskX86 1.0.0.3 (1.0.63) #########################
+##################################################################################
+[2022/10/02 15:17:39.043] Current directory:<E>
+[2022/10/02 15:17:39.043] id=6432/14432
+[2022/10/02 15:17:39.043]
+[2022/10/02 15:17:39.043] PSize:<586752 573KB>
+[2022/10/02 15:17:39.043] Lunch main process 0
+[2022/10/02 15:17:39.043] Control Flag: 0 1 1
+[2022/10/02 15:17:39.043] Windows Version: <<Windows 11 Pro for Workstations, 64-bit (Build 22622.598)>>
+[2022/10/02 15:17:39.043] 
+===================== Enum All PhyDrives =====================
+[2022/10/02 15:17:39.043] RegOpenKeyExA <SYSTEM\CurrentControlSet\Services\disk\Enum> Ret:0
+[2022/10/02 15:17:39.043] RegQueryValueExA <Count> ret:0  Size:4 Value:2
+[2022/10/02 15:17:39.043] GetPhysicalDriveCount: 2
+[2022/10/02 15:17:39.043] Logical Drives: 0x1c
+[2022/10/02 15:17:39.043] LogicalDrive:\\.\C: PhyDrive:0 Offset:436003143680 ExtentLength:76107030016
+[2022/10/02 15:17:39.043] C --> 0
+[2022/10/02 15:17:39.043] LogicalDrive:\\.\D: PhyDrive:1 Offset:1048576 ExtentLength:502267904
+[2022/10/02 15:17:39.043] D --> 1
+[2022/10/02 15:17:39.043] LogicalDrive:\\.\E: PhyDrive:0 Offset:122683392 ExtentLength:382193369088
+[2022/10/02 15:17:39.058] E --> 0
+[2022/10/02 15:17:39.058] Create file Handle:000001BC \\.\PhysicalDrive0 status:0
+[2022/10/02 15:17:39.058] PHYSICALDRIVE0 size 512110190592 bytes
+[2022/10/02 15:17:39.058] Create file Handle:000001BC \\.\PhysicalDrive1 status:0
+[2022/10/02 15:17:39.058] PHYSICALDRIVE1 size 536870912 bytes
+[2022/10/02 15:17:39.058] PhyDrv:0 BusType:Nvme Removable:0 Size:512GB(512110190592) Name: PM8512GPMCB27BTF-E13T2IAMS
+[2022/10/02 15:17:39.058] PhyDrv:1 BusType:USB  Removable:1 Size:0GB(536870912) Name:Linux File-Stor Gadget
+[2022/10/02 15:17:39.058] LogicalDrive:\\.\C: PhyDrive:0 Offset:436003143680 ExtentLength:76107030016
+[2022/10/02 15:17:39.058] Logical Drive:C  ===> PhyDrive:0
+[2022/10/02 15:17:39.058] LogicalDrive:\\.\D: PhyDrive:1 Offset:1048576 ExtentLength:502267904
+[2022/10/02 15:17:39.058] Logical Drive:D  ===> PhyDrive:1
+[2022/10/02 15:17:39.058] LogicalDrive:\\.\E: PhyDrive:0 Offset:122683392 ExtentLength:382193369088
+[2022/10/02 15:17:39.058] Logical Drive:E  ===> PhyDrive:0
+[2022/10/02 15:17:39.058] Create file Handle:000001BC \\.\PhysicalDrive1 status:0
+[2022/10/02 15:17:39.058] Read MBR Ret:1 Size:512 code:183
+[2022/10/02 15:17:39.058] =========== Disk1 MBR Partition 1 ============
+[2022/10/02 15:17:39.058] PartTbl.Active = 0x80
+[2022/10/02 15:17:39.058] PartTbl.FsFlag = 0x7
+[2022/10/02 15:17:39.058] PartTbl.StartSectorId = 2048
+[2022/10/02 15:17:39.058] PartTbl.SectorCount = 980992
+[2022/10/02 15:17:39.058] PartTbl.StartHead = 0
+[2022/10/02 15:17:39.058] PartTbl.StartSector = 33
+[2022/10/02 15:17:39.058] PartTbl.StartCylinder = 1
+[2022/10/02 15:17:39.058] PartTbl.EndHead = 19
+[2022/10/02 15:17:39.058] PartTbl.EndSector = 51
+[2022/10/02 15:17:39.058] PartTbl.EndCylinder = 487
+[2022/10/02 15:17:39.058] =========== Disk1 MBR Partition 2 ============
+[2022/10/02 15:17:39.058] PartTbl.Active = 0x0
+[2022/10/02 15:17:39.058] PartTbl.FsFlag = 0xef
+[2022/10/02 15:17:39.058] PartTbl.StartSectorId = 983040
+[2022/10/02 15:17:39.058] PartTbl.SectorCount = 65536
+[2022/10/02 15:17:39.058] PartTbl.StartHead = 19
+[2022/10/02 15:17:39.058] PartTbl.StartSector = 52
+[2022/10/02 15:17:39.058] PartTbl.StartCylinder = 487
+[2022/10/02 15:17:39.058] PartTbl.EndHead = 4
+[2022/10/02 15:17:39.058] PartTbl.EndSector = 4
+[2022/10/02 15:17:39.058] PartTbl.EndCylinder = 520
+[2022/10/02 15:17:39.058] =========== Disk1 MBR Partition 3 ============
+[2022/10/02 15:17:39.058] PartTbl.Active = 0x0
+[2022/10/02 15:17:39.058] PartTbl.FsFlag = 0x0
+[2022/10/02 15:17:39.058] PartTbl.StartSectorId = 0
+[2022/10/02 15:17:39.058] PartTbl.SectorCount = 0
+[2022/10/02 15:17:39.058] PartTbl.StartHead = 0
+[2022/10/02 15:17:39.058] PartTbl.StartSector = 0
+[2022/10/02 15:17:39.058] PartTbl.StartCylinder = 0
+[2022/10/02 15:17:39.058] PartTbl.EndHead = 0
+[2022/10/02 15:17:39.058] PartTbl.EndSector = 0
+[2022/10/02 15:17:39.058] PartTbl.EndCylinder = 0
+[2022/10/02 15:17:39.058] =========== Disk1 MBR Partition 4 ============
+[2022/10/02 15:17:39.058] PartTbl.Active = 0x0
+[2022/10/02 15:17:39.058] PartTbl.FsFlag = 0x0
+[2022/10/02 15:17:39.058] PartTbl.StartSectorId = 0
+[2022/10/02 15:17:39.058] PartTbl.SectorCount = 0
+[2022/10/02 15:17:39.058] PartTbl.StartHead = 0
+[2022/10/02 15:17:39.058] PartTbl.StartSector = 0
+[2022/10/02 15:17:39.058] PartTbl.StartCylinder = 0
+[2022/10/02 15:17:39.058] PartTbl.EndHead = 0
+[2022/10/02 15:17:39.058] PartTbl.EndSector = 0
+[2022/10/02 15:17:39.058] PartTbl.EndCylinder = 0
+[2022/10/02 15:17:39.058] PhysicalDrive1 is ventoy disk
+[2022/10/02 15:17:39.058] QueryDosDeviceA success \Device\Harddisk1\DR4
+[2022/10/02 15:17:39.058] [0] CreateFileA \\.\PhysicalDrive1 code:0 000001BC
+[2022/10/02 15:17:39.058] Parse FAT fs...
+[2022/10/02 15:17:39.058] attach media success...
+[2022/10/02 15:17:39.105] GetVentoyVerInPhyDrive rc=0...
+[2022/10/02 15:17:39.105] VentoyVerInPhyDrive 1 is <1.0.80>...
+[2022/10/02 15:17:39.105] PhyDrive 1 is Ventoy Disk ver:1.0.80 SecureBoot:1
+[2022/10/02 15:17:39.105] Create file Handle:000001BC \\.\PhysicalDrive0 status:0
+[2022/10/02 15:17:39.105] Read MBR Ret:1 Size:512 code:183
+[2022/10/02 15:17:39.105] =========== Disk0 GPT Partition 1 ============
+[2022/10/02 15:17:39.121] PartTbl.PartType = {c12a7328-f81f-11d2-ba4b-00a0c93ec93b}
+[2022/10/02 15:17:39.121] PartTbl.PartGuid = {04ba68cc-80da-4b3e-8f1e-f91f7bf33e4b}
+[2022/10/02 15:17:39.121] PartTbl.StartLBA = 2048
+[2022/10/02 15:17:39.121] PartTbl.LastLBA = 206847
+[2022/10/02 15:17:39.121] PartTbl.Attribute = 0x0
+[2022/10/02 15:17:39.121] PartTbl.Name = EFI system partition
+[2022/10/02 15:17:39.121] =========== Disk0 GPT Partition 2 ============
+[2022/10/02 15:17:39.121] PartTbl.PartType = {e3c9e316-0b5c-4db8-817d-f92df00215ae}
+[2022/10/02 15:17:39.121] PartTbl.PartGuid = {d7e9f2ae-45bb-4c9d-b724-b6eae75b5ee1}
+[2022/10/02 15:17:39.121] PartTbl.StartLBA = 206848
+[2022/10/02 15:17:39.121] PartTbl.LastLBA = 239615
+[2022/10/02 15:17:39.121] PartTbl.Attribute = 0x0
+[2022/10/02 15:17:39.121] PartTbl.Name = Microsoft reserved partition
+[2022/10/02 15:17:39.121] =========== Disk0 GPT Partition 3 ============
+[2022/10/02 15:17:39.121] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/10/02 15:17:39.121] PartTbl.PartGuid = {27600574-b0ec-4076-a00d-5df5c9f2f637}
+[2022/10/02 15:17:39.121] PartTbl.StartLBA = 239616
+[2022/10/02 15:17:39.121] PartTbl.LastLBA = 746711039
+[2022/10/02 15:17:39.121] PartTbl.Attribute = 0x0
+[2022/10/02 15:17:39.121] PartTbl.Name = Basic data partition
+[2022/10/02 15:17:39.121] =========== Disk0 GPT Partition 4 ============
+[2022/10/02 15:17:39.121] PartTbl.PartType = {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}
+[2022/10/02 15:17:39.121] PartTbl.PartGuid = {f1994735-02ec-4902-a3a0-0247e6498edb}
+[2022/10/02 15:17:39.121] PartTbl.StartLBA = 851568640
+[2022/10/02 15:17:39.121] PartTbl.LastLBA = 1000215182
+[2022/10/02 15:17:39.121] PartTbl.Attribute = 0x0
+[2022/10/02 15:17:39.121] PartTbl.Name = Basic data partition
+[2022/10/02 15:17:39.121] =========== Disk0 GPT Partition 5 ============
+[2022/10/02 15:17:39.121] PartTbl.PartType = {0fc63daf-8483-4772-8e79-3d69d8477de4}
+[2022/10/02 15:17:39.121] PartTbl.PartGuid = {6758b40b-1b21-4c17-8327-0b1a476152ff}
+[2022/10/02 15:17:39.121] PartTbl.StartLBA = 746711040
+[2022/10/02 15:17:39.121] PartTbl.LastLBA = 851568639
+[2022/10/02 15:17:39.121] PartTbl.Attribute = 0x0
+[2022/10/02 15:17:39.121] PartTbl.Name = 
+[2022/10/02 15:17:39.121] Invalid ventoy efi part name <Microsoft reserved partition>
+[2022/10/02 15:17:39.140] Load languages from json file ...
+[2022/10/02 15:17:39.140] language json file len:190384 json parse:0
+[2022/10/02 15:17:39.140] Total 43 languages ...
+[2022/10/02 15:17:39.214] Combox select change, update secure boot option: 0 1
+[2022/10/02 15:17:41.381] Combox select change, update secure boot option: 1 1
+[2022/10/02 15:17:44.310] Combox select change, update secure boot option: 1 1

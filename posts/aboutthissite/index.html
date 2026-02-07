@@ -10,19 +10,21 @@
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>  
-    MathJax = {
-      tex: {
-        packages: {'[+]': ['mhchem']},
-        displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-        inlineMath: [['\\(', '\\)']]                  
-      },
-      loader: {
-        load: ['[tex]/mhchem']
-      }
-    };
     
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net.cn/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  
+<script>
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let lastScrollTop = 0;
@@ -84,16 +86,16 @@ ssh -p 22 root@&lt;your_ip&gt;
 设置域名解析
 注册Namesilo的账号，并在Namesilo中购买一个域名（笔者购买了alexsun.one，花费24CNY），配置DNS记录，等待10分钟（TTL=3600）后即可全球生效">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.alexsun.one/posts/aboutthissite/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.63e5026f30f9ba7d3b406c37b7b023c54cebb170bc25039ddd5ff868fcaf09c6.css" integrity="sha256-Y&#43;UCbzD5un07QGw3t7AjxUzrsXC8JQOd3V/4aPyvCcY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.alexsun.one/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.alexsun.one/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.alexsun.one/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.alexsun.one/apple-touch-icon.png">
-<link rel="mask-icon" href="https://www.alexsun.one/safari-pinned-tab.svg">
+<link rel="canonical" href="https://sunisalex.github.io/posts/aboutthissite/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.07b5ac2d8893e425ce854a345186293ddc6ff3dccb2e99b5d904b9efad74fc2f.css" integrity="sha256-B7WsLYiT5CXOhUo0UYYpPdxv89zLLpm12QS57610/C8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sunisalex.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sunisalex.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sunisalex.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sunisalex.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sunisalex.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://www.alexsun.one/posts/aboutthissite/">
+<link rel="alternate" hreflang="en" href="https://sunisalex.github.io/posts/aboutthissite/">
 <noscript>
     <style>
         #theme-toggle,
@@ -145,7 +147,7 @@ ssh -p 22 root@&lt;your_ip&gt;
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://www.alexsun.one/posts/aboutthissite/">
+</script><meta property="og:url" content="https://sunisalex.github.io/posts/aboutthissite/">
   <meta property="og:site_name" content="Alex&#39;s site">
   <meta property="og:title" content="关于本站">
   <meta property="og:description" content="网站概况： (通过JS请求[/api/neofetch]得到，每2秒更新)
@@ -204,13 +206,13 @@ ssh -p 22 root@&lt;your_ip&gt;
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://www.alexsun.one/posts/"
+      "item": "https://sunisalex.github.io/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "关于本站",
-      "item": "https://www.alexsun.one/posts/aboutthissite/"
+      "item": "https://sunisalex.github.io/posts/aboutthissite/"
     }
   ]
 }
@@ -232,14 +234,14 @@ ssh -p 22 root@&lt;your_ip&gt;
   "dateModified": "2026-02-02T16:36:28+08:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.alexsun.one/posts/aboutthissite/"
+    "@id": "https://sunisalex.github.io/posts/aboutthissite/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Alex's site",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.alexsun.one/favicon.ico"
+      "url": "https://sunisalex.github.io/favicon.ico"
     }
   }
 }
@@ -249,7 +251,7 @@ ssh -p 22 root@&lt;your_ip&gt;
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.alexsun.one/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
+            <a href="https://sunisalex.github.io/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -275,27 +277,27 @@ ssh -p 22 root@&lt;your_ip&gt;
         </div>
         <ul id="menu">
             <li>
-                <a href="https://www.alexsun.one/" title="Home Page">
+                <a href="https://sunisalex.github.io/" title="Home Page">
                     <span>Home Page</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/categories" title="Categories">
+                <a href="https://sunisalex.github.io/categories" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/tags" title="Tags">
+                <a href="https://sunisalex.github.io/tags" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://sunisalex.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/files" title="Files">
+                <a href="https://sunisalex.github.io/files" title="Files">
                     <span>Files</span>
                 </a>
             </li>
@@ -313,7 +315,37 @@ ssh -p 22 root@&lt;your_ip&gt;
     <div class="post-meta"><span title='2026-02-02 16:36:28 +0800 CST' style='color:#01B5F4'>February 2, 2026</span>
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul><ul><ul>
+                <li>
+                    <a href="#%e7%bd%91%e7%ab%99%e6%a6%82%e5%86%b5" aria-label="网站概况：">网站概况：</a></li></ul>
+                    </ul>
+                    
+                <li>
+                    <a href="#%e8%a7%84%e5%88%92%e5%87%86%e5%a4%87" aria-label="规划准备">规划准备</a></li>
+                <li>
+                    <a href="#%e5%85%b7%e4%bd%93%e6%93%8d%e4%bd%9c" aria-label="具体操作">具体操作</a><ul>
+                        
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85nginx" aria-label="安装nginx">安装nginx</a></li>
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85hugo" aria-label="安装Hugo">安装Hugo</a></li>
+                <li>
+                    <a href="#certbot" aria-label="certbot">certbot</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%bb%93%e8%af%ad" aria-label="结语">结语</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
   <div class="post-content">
     
       <blockquote><p id="poem"></p><p id="origin"></p></blockquote>
@@ -667,20 +699,15 @@ hugo v0.156.0-DEV-73641aeca107c26f53e9a0f76a141cdb43faf277+extended linux/amd64 
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.alexsun.one/tags/nginx/">Nginx</a></li>
-      <li><a href="https://www.alexsun.one/tags/hugo/">Hugo</a></li>
-      <li><a href="https://www.alexsun.one/tags/linux/">Linux</a></li>
+      <li><a href="https://sunisalex.github.io/tags/nginx/">Nginx</a></li>
+      <li><a href="https://sunisalex.github.io/tags/hugo/">Hugo</a></li>
+      <li><a href="https://sunisalex.github.io/tags/linux/">Linux</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.alexsun.one/posts/20260202%E8%AF%AD%E6%B3%95%E5%A1%AB%E7%A9%BA/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>20260202语法填空</span>
-  </a>
-  <a class="next" href="https://www.alexsun.one/posts/markdown/">
+  <a class="next" href="https://sunisalex.github.io/posts/http_response_status_code/">
     <span class="title">Next »</span>
     <br>
-    <span>Markdown</span>
+    <span>HTTP状态码</span>
   </a>
 </nav>
 
@@ -689,7 +716,7 @@ hugo v0.156.0-DEV-73641aeca107c26f53e9a0f76a141cdb43faf277+extended linux/amd64 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://www.alexsun.one/">Alex&#39;s site</a></span> · 
+        <span>&copy; 2026 <a href="https://sunisalex.github.io/">Alex&#39;s site</a></span> · 
 
     <span>
         Powered by

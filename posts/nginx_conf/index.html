@@ -10,19 +10,21 @@
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>  
-    MathJax = {
-      tex: {
-        packages: {'[+]': ['mhchem']},
-        displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-        inlineMath: [['\\(', '\\)']]                  
-      },
-      loader: {
-        load: ['[tex]/mhchem']
-      }
-    };
     
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net.cn/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  
+<script>
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let lastScrollTop = 0;
@@ -107,16 +109,16 @@ location [modifier] [URI] {
 
 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.alexsun.one/posts/nginx_conf/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.63e5026f30f9ba7d3b406c37b7b023c54cebb170bc25039ddd5ff868fcaf09c6.css" integrity="sha256-Y&#43;UCbzD5un07QGw3t7AjxUzrsXC8JQOd3V/4aPyvCcY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.alexsun.one/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.alexsun.one/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.alexsun.one/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.alexsun.one/apple-touch-icon.png">
-<link rel="mask-icon" href="https://www.alexsun.one/safari-pinned-tab.svg">
+<link rel="canonical" href="https://sunisalex.github.io/posts/nginx_conf/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.07b5ac2d8893e425ce854a345186293ddc6ff3dccb2e99b5d904b9efad74fc2f.css" integrity="sha256-B7WsLYiT5CXOhUo0UYYpPdxv89zLLpm12QS57610/C8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sunisalex.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sunisalex.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sunisalex.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sunisalex.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sunisalex.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://www.alexsun.one/posts/nginx_conf/">
+<link rel="alternate" hreflang="en" href="https://sunisalex.github.io/posts/nginx_conf/">
 <noscript>
     <style>
         #theme-toggle,
@@ -168,7 +170,7 @@ location [modifier] [URI] {
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://www.alexsun.one/posts/nginx_conf/">
+</script><meta property="og:url" content="https://sunisalex.github.io/posts/nginx_conf/">
   <meta property="og:site_name" content="Alex&#39;s site">
   <meta property="og:title" content="Nginx安全配置">
   <meta property="og:description" content=" 1 2 root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log access_log /var/log/nginx/access.log; #nginx访问日志文件 1 2 grep wp-admin /var/log/nginx/access.log | cat -n #查看日志中含wp-admin(wordpress后台)的内容 1 2 3 1 162.158.182.84 - - [05/Feb/2026:00:05:25 &#43;0800] &#34;GET /wordpress/wp-admin/setup-config.php HTTP/1.1&#34; 404 134 &#34;-&#34; &#34;https://alexsun.one/wordpress/wp-admin/setup-config.php&#34; ...... 73 172.71.184.188 - - [05/Feb/2026:10:49:11 &#43;0800] &#34;GET /wp-admin/setup-config.php HTTP/1.1&#34; 444 0 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36&#34; 我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1 用nginx的location可以配置路由，实现对恶意扫描的处理：
@@ -242,13 +244,13 @@ location [modifier] [URI] {
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://www.alexsun.one/posts/"
+      "item": "https://sunisalex.github.io/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Nginx安全配置",
-      "item": "https://www.alexsun.one/posts/nginx_conf/"
+      "item": "https://sunisalex.github.io/posts/nginx_conf/"
     }
   ]
 }
@@ -263,21 +265,21 @@ location [modifier] [URI] {
   "keywords": [
     "Linux", "nginx"
   ],
-  "articleBody": " 1 2 root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log access_log /var/log/nginx/access.log; #nginx访问日志文件 1 2 grep wp-admin /var/log/nginx/access.log | cat -n #查看日志中含wp-admin(wordpress后台)的内容 1 2 3 1 162.158.182.84 - - [05/Feb/2026:00:05:25 +0800] \"GET /wordpress/wp-admin/setup-config.php HTTP/1.1\" 404 134 \"-\" \"https://alexsun.one/wordpress/wp-admin/setup-config.php\" ...... 73 172.71.184.188 - - [05/Feb/2026:10:49:11 +0800] \"GET /wp-admin/setup-config.php HTTP/1.1\" 444 0 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\" 我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1 用nginx的location可以配置路由，实现对恶意扫描的处理：\n1 2 3 location [modifier] [URI] { } 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。\n优先级 Modifier（修饰符） 匹配类型 大小写敏感 说明 示例 典型使用场景 1 = 精确匹配 是 必须完全相等（包括结尾斜杠），一旦命中立即停止搜索其他 location location = / location = /index.html favicon.ico、首页、特定静态文件 2 ^~ 前缀匹配（优先） 是 前缀匹配，命中后不再检查正则 location（最长前缀优先） location ^~ /wp- location ^~ /images/ 屏蔽扫描路径、静态资源目录 3 ~ 正则匹配 是（区分） 正则表达式匹配，区分大小写，按配置文件出现顺序逐个尝试 location ~ \\.php$ location ~ ^/admin 处理 .php 文件、特定路径规则 4 ~* 正则匹配（忽略大小写） 否 正则表达式匹配，不区分大小写，按配置文件出现顺序逐个尝试 `location ~* .(jpg png 5 （无修饰符） 前缀匹配（普通） 是 普通前缀匹配，匹配最长前缀后继续尝试正则（除非被 ^~ 阻止） location / location /blog/ 默认根路径、子目录兜底 特殊 @name 命名 location — 内部跳转使用，不能直接被外部请求命中 location @fallback { ... } error_page 跳转、try_files 内部重定向 1 2 3 4 5 # 屏蔽常见的 WordPress 扫描路径（可放在 server {} 内或 include 到所有 server） location ~* ^/(wp-admin|wp-login\\.php|wp-config\\.php|xmlrpc\\.php|readme\\.html|license\\.txt|wp-signup\\.php|setup-config\\.php) { # 或者用 return 403; 但 444 更省资源 return 444; } 自动化扫描行为（reconnaissance scanning），不是针对你个人的攻击，而是几乎所有暴露在公网的服务器都会遇到的“噪音”。 ↩︎\n",
-  "wordCount" : "189",
+  "articleBody": " 1 2 root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log access_log /var/log/nginx/access.log; #nginx访问日志文件 1 2 grep wp-admin /var/log/nginx/access.log | cat -n #查看日志中含wp-admin(wordpress后台)的内容 1 2 3 1 162.158.182.84 - - [05/Feb/2026:00:05:25 +0800] \"GET /wordpress/wp-admin/setup-config.php HTTP/1.1\" 404 134 \"-\" \"https://alexsun.one/wordpress/wp-admin/setup-config.php\" ...... 73 172.71.184.188 - - [05/Feb/2026:10:49:11 +0800] \"GET /wp-admin/setup-config.php HTTP/1.1\" 444 0 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\" 我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1 用nginx的location可以配置路由，实现对恶意扫描的处理：\n1 2 3 location [modifier] [URI] { } 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。\n优先级 Modifier（修饰符） 匹配类型 大小写敏感 说明 示例 典型使用场景 1 = 精确匹配 是 必须完全相等（包括结尾斜杠），一旦命中立即停止搜索其他 location location = / location = /index.html favicon.ico、首页、特定静态文件 2 ^~ 前缀匹配（优先） 是 前缀匹配，命中后不再检查正则 location（最长前缀优先） location ^~ /wp- location ^~ /images/ 屏蔽扫描路径、静态资源目录 3 ~ 正则匹配 是（区分） 正则表达式匹配，区分大小写，按配置文件出现顺序逐个尝试 location ~ \\.php$ location ~ ^/admin 处理 .php 文件、特定路径规则 4 ~* 正则匹配（忽略大小写） 否 正则表达式匹配，不区分大小写，按配置文件出现顺序逐个尝试 `location ~* .(jpg png 5 （无修饰符） 前缀匹配（普通） 是 普通前缀匹配，匹配最长前缀后继续尝试正则（除非被 ^~ 阻止） location / location /blog/ 默认根路径、子目录兜底 特殊 @name 命名 location — 内部跳转使用，不能直接被外部请求命中 location @fallback { ... } error_page 跳转、try_files 内部重定向 1 2 3 4 5 6 # 屏蔽常见的 WordPress 扫描路径（可放在 server {} 内或 include 到所有 server） location ~* ^/(wp-admin|wp-login\\.php|wp-config\\.php|xmlrpc\\.php|readme\\.html|license\\.txt|wp-signup\\.php|setup-config\\.php) { # return HTTP_RESPONSE_CODE # 或者用 return 403; 但 444 更省资源 return 444; } 关于HTTP状态码，详见HTTP_RESPONSE_STATUS_CODE\n更加简单粗暴的解决方案：\n1 2 3 location ~ (php|aspx|git|python) { return 444; } 如果访问这些路径，服务器断开连接，则配置成功\n1 2 root@datacon-winterc:~/quickstart# curl -i https://www.alexsun.one/index.php curl: (52) Empty reply from server 自动化扫描行为（reconnaissance scanning），不是针对你个人的攻击，而是几乎所有暴露在公网的服务器都会遇到的“噪音”。 ↩︎\n",
+  "wordCount" : "218",
   "inLanguage": "en",
   "datePublished": "2026-02-05T10:47:08+08:00",
   "dateModified": "2026-02-05T10:47:08+08:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.alexsun.one/posts/nginx_conf/"
+    "@id": "https://sunisalex.github.io/posts/nginx_conf/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Alex's site",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.alexsun.one/favicon.ico"
+      "url": "https://sunisalex.github.io/favicon.ico"
     }
   }
 }
@@ -287,7 +289,7 @@ location [modifier] [URI] {
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.alexsun.one/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
+            <a href="https://sunisalex.github.io/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -313,27 +315,27 @@ location [modifier] [URI] {
         </div>
         <ul id="menu">
             <li>
-                <a href="https://www.alexsun.one/" title="Home Page">
+                <a href="https://sunisalex.github.io/" title="Home Page">
                     <span>Home Page</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/categories" title="Categories">
+                <a href="https://sunisalex.github.io/categories" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/tags" title="Tags">
+                <a href="https://sunisalex.github.io/tags" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://sunisalex.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.alexsun.one/files" title="Files">
+                <a href="https://sunisalex.github.io/files" title="Files">
                     <span>Files</span>
                 </a>
             </li>
@@ -352,6 +354,7 @@ location [modifier] [URI] {
 
 </div>
   </header> 
+
   <div class="post-content">
     
       <blockquote><p id="poem"></p><p id="origin"></p></blockquote>
@@ -494,13 +497,40 @@ location [modifier] [URI] {
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 屏蔽常见的 WordPress 扫描路径（可放在 server {} 内或 include 到所有 server）
 </span></span><span class="line"><span class="cl">location ~* ^/(wp-admin|wp-login\.php|wp-config\.php|xmlrpc\.php|readme\.html|license\.txt|wp-signup\.php|setup-config\.php) {
+</span></span><span class="line"><span class="cl">    # return HTTP_RESPONSE_CODE
 </span></span><span class="line"><span class="cl">    # 或者用 return 403; 但 444 更省资源
 </span></span><span class="line"><span class="cl">    return 444;
 </span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关于HTTP状态码，详见<a href="https://www.alexsun.one/posts/http_response_status_code/">HTTP_RESPONSE_STATUS_CODE</a></p>
+<p>更加简单粗暴的解决方案：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">location ~ (php|aspx|git|python) {
+</span></span><span class="line"><span class="cl">   	return 444;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果访问这些路径，服务器断开连接，则配置成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">root@datacon-winterc:~/quickstart# curl -i https://www.alexsun.one/index.php
+</span></span><span class="line"><span class="cl">curl: <span class="o">(</span>52<span class="o">)</span> Empty reply from server
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="footnotes" role="doc-endnotes">
@@ -517,11 +547,16 @@ location [modifier] [URI] {
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.alexsun.one/tags/linux/">Linux</a></li>
-      <li><a href="https://www.alexsun.one/tags/nginx/">Nginx</a></li>
+      <li><a href="https://sunisalex.github.io/tags/linux/">Linux</a></li>
+      <li><a href="https://sunisalex.github.io/tags/nginx/">Nginx</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://www.alexsun.one/posts/available_prompts/">
+  <a class="prev" href="https://sunisalex.github.io/posts/http_response_status_code/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>HTTP状态码</span>
+  </a>
+  <a class="next" href="https://sunisalex.github.io/posts/available_prompts/">
     <span class="title">Next »</span>
     <br>
     <span>Available_prompts</span>
@@ -533,7 +568,7 @@ location [modifier] [URI] {
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://www.alexsun.one/">Alex&#39;s site</a></span> · 
+        <span>&copy; 2026 <a href="https://sunisalex.github.io/">Alex&#39;s site</a></span> · 
 
     <span>
         Powered by
