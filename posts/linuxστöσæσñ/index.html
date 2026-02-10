@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net.cn/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+  
+<script>
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  let lastScrollTop = 0;
+const header = document.querySelector('header.header') || document.querySelector('.header') || document.querySelector('header');
+
+if (!header) {
+    console.warn("Header element not found! Smart hide won't work.");
+} else {
+    const delta = 5;
+    const headerHeight = header.offsetHeight || 60;
+
+    window.addEventListener('scroll', () => {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (Math.abs(lastScrollTop - st) <= delta) return;
+
+        if (st > lastScrollTop && st > headerHeight) {
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.transform = 'translateY(0)';
+        }
+
+        lastScrollTop = st <= 0 ? 0 : st;
+    }, { passive: true });
+}
+    
+    
+});
+    </script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Linux常用命令 | Alex&#39;s site</title>
+<meta name="keywords" content="">
+<meta name="description" content="文件管理
+
+
+cat\(concatenate\)
+
+
+1
+
+
+cat [options] [file]
+
+
+
+  
+      
+          options
+          description
+      
+  
+  
+      
+          -n
+          显示行号，会在输出的每一行前加上行号
+      
+      
+          -b
+          显示行号，但只对非空行进行编号
+      
+      
+          -s
+          压缩连续的空行，只显示一个空行
+      
+      
+          -E
+          在每一行的末尾显示 $ 符号
+      
+      
+          -T
+          将 Tab 字符显示为 ^I
+      
+      
+          -v
+          显示一些非打印字符
+      
+  
+
+PS:
+
+以上的options是大小写不敏感的\(capital insensitive\)
+可以有多个file
+
+Example
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+
+    root@datacon-winterc:~/quickstart# touch filename #创建filename文件
+    root@datacon-winterc:~/quickstart# cat &gt; filename #把标准输入重定向到filename文件
+    test_message
+    ^C
+    root@datacon-winterc:~/quickstart# cat filename #查看filename文件
+    test_message
+    root@datacon-winterc:~/quickstart# cat /dev/null &gt; filename
+    #清空filename文件
+
+
+cat也可以用来制作/烧录镜像文件">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.07b5ac2d8893e425ce854a345186293ddc6ff3dccb2e99b5d904b9efad74fc2f.css" integrity="sha256-B7WsLYiT5CXOhUo0UYYpPdxv89zLLpm12QS57610/C8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home Page">
+                    <span>Home Page</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/files" title="Files">
+                    <span>Files</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Linux常用命令
+    </h1>
+    <div class="post-meta"><span title='2026-02-03 10:35:29 +0800 CST' style='color:#01B5F4'>February 3, 2026</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86" aria-label="文件管理">文件管理</a><ul>
+                        
+                <li>
+                    <a href="#example" aria-label="Example">Example</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+      <blockquote><p id="poem"></p><p id="origin"></p></blockquote>
+      <script>
+          let poem = document.getElementById('poem');
+          let origin = document.getElementById('origin');
+          var xhr = new XMLHttpRequest();
+          xhr.open('get', 'https://v1.jinrishici.com/all.json');
+          xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4) {
+                  var result = JSON.parse(xhr.responseText);
+                  poem.innerText = result.content;
+                  origin.innerText = "——" + result.author + "《" + result.origin + "》";
+              }
+          };
+        xhr.send();
+      </script><h1 id="文件管理">文件管理<a hidden class="anchor" aria-hidden="true" href="#文件管理">#</a></h1>
+<ol>
+<li>
+<p>cat\(concatenate\)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>file<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">options</th>
+          <th>description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">-n</td>
+          <td>显示行号，会在输出的每一行前加上行号</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-b</td>
+          <td>显示行号，但只对非空行进行编号</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-s</td>
+          <td>压缩连续的空行，只显示一个空行</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-E</td>
+          <td>在每一行的末尾显示 $ 符号</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-T</td>
+          <td>将 Tab 字符显示为 ^I</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-v</td>
+          <td>显示一些非打印字符</td>
+      </tr>
+  </tbody>
+</table>
+<p>PS:</p>
+<ul>
+<li>以上的options是大小写不敏感的\(capital insensitive\)</li>
+<li>可以有多个file</li>
+</ul>
+<h2 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    root@datacon-winterc:~/quickstart# touch filename #创建filename文件
+</span></span><span class="line"><span class="cl">    root@datacon-winterc:~/quickstart# cat &gt; filename #把标准输入重定向到filename文件
+</span></span><span class="line"><span class="cl">    test_message
+</span></span><span class="line"><span class="cl">    ^C
+</span></span><span class="line"><span class="cl">    root@datacon-winterc:~/quickstart# cat filename #查看filename文件
+</span></span><span class="line"><span class="cl">    test_message
+</span></span><span class="line"><span class="cl">    root@datacon-winterc:~/quickstart# cat /dev/null &gt; filename
+</span></span><span class="line"><span class="cl">    #清空filename文件
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>cat也可以用来制作/烧录镜像文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat /dev/fd0 &gt; OUT.img
+</span></span><span class="line"><span class="cl">cat OUT.img &gt; /dev/fd0
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>tar</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">root@datacon-winterc:~/quickstart# tar --help
+</span></span><span class="line"><span class="cl">Usage: tar <span class="o">[</span>OPTION...<span class="o">]</span> <span class="o">[</span>FILE<span class="o">]</span>...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">touch a.c       
+</span></span><span class="line"><span class="cl">tar -czvf test.tar.gz a.c
+</span></span><span class="line"><span class="cl">//压缩 a.c文件为test.tar.gz
+</span></span><span class="line"><span class="cl">//-z <span class="k">for</span> gzip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">tar -tzvf test.tar.gz //列出压缩文件内容
+</span></span><span class="line"><span class="cl">tar -xzvf test.tar.gz a.c //解压文件
+</span></span><span class="line"><span class="cl">//-f <span class="k">for</span> list, -x <span class="k">for</span> extract
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/available_prompts/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Available_prompts</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/">
+    <span class="title">Next »</span>
+    <br>
+    <span>20260202语法填空</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Alex&#39;s site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

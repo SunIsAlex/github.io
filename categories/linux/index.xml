@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on Alex&#39;s site</title>
+    <link>https://www.alexsun.one/categories/linux/</link>
+    <description>Recent content in Linux on Alex&#39;s site</description>
+    <generator>Hugo -- 0.156.0-DEV</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Feb 2026 10:35:29 +0800</lastBuildDate>
+    <atom:link href="https://www.alexsun.one/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux常用命令</title>
+      <link>https://www.alexsun.one/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 03 Feb 2026 10:35:29 +0800</pubDate>
+      <guid>https://www.alexsun.one/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;h1 id=&#34;文件管理&#34;&gt;文件管理&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;cat(concatenate)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;options&lt;/th&gt;
+          &lt;th&gt;description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-n&lt;/td&gt;
+          &lt;td&gt;显示行号，会在输出的每一行前加上行号&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-b&lt;/td&gt;
+          &lt;td&gt;显示行号，但只对非空行进行编号&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-s&lt;/td&gt;
+          &lt;td&gt;压缩连续的空行，只显示一个空行&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-E&lt;/td&gt;
+          &lt;td&gt;在每一行的末尾显示 $ 符号&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-T&lt;/td&gt;
+          &lt;td&gt;将 Tab 字符显示为 ^I&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-v&lt;/td&gt;
+          &lt;td&gt;显示一些非打印字符&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;PS:以上的options是大小写不敏感的(capital insensitive)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
