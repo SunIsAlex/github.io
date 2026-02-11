@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -56,7 +56,7 @@ if (!header) {
     </script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Linux常用命令 | Alex&#39;s site</title>
 <meta name="keywords" content="">
 <meta name="description" content="文件管理
@@ -135,16 +135,16 @@ Example
 
 cat也可以用来制作/烧录镜像文件">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
+<link rel="canonical" href="https://github.alexsun.one/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.07b5ac2d8893e425ce854a345186293ddc6ff3dccb2e99b5d904b9efad74fc2f.css" integrity="sha256-B7WsLYiT5CXOhUo0UYYpPdxv89zLLpm12QS57610/C8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://github.alexsun.one/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.alexsun.one/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.alexsun.one/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.alexsun.one/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.alexsun.one/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
+<link rel="alternate" hreflang="en" href="https://github.alexsun.one/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
 <noscript>
     <style>
         #theme-toggle,
@@ -196,13 +196,151 @@ cat也可以用来制作/烧录镜像文件">
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://github.alexsun.one/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/">
+  <meta property="og:site_name" content="Alex&#39;s site">
+  <meta property="og:title" content="Linux常用命令">
+  <meta property="og:description" content="文件管理 cat\(concatenate\)
+1 cat [options] [file] options description -n 显示行号，会在输出的每一行前加上行号 -b 显示行号，但只对非空行进行编号 -s 压缩连续的空行，只显示一个空行 -E 在每一行的末尾显示 $ 符号 -T 将 Tab 字符显示为 ^I -v 显示一些非打印字符 PS:
+以上的options是大小写不敏感的\(capital insensitive\) 可以有多个file Example 1 2 3 4 5 6 7 8 root@datacon-winterc:~/quickstart# touch filename #创建filename文件 root@datacon-winterc:~/quickstart# cat &gt; filename #把标准输入重定向到filename文件 test_message ^C root@datacon-winterc:~/quickstart# cat filename #查看filename文件 test_message root@datacon-winterc:~/quickstart# cat /dev/null &gt; filename #清空filename文件 cat也可以用来制作/烧录镜像文件">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-03T10:35:29+08:00">
+    <meta property="article:modified_time" content="2026-02-03T10:35:29+08:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux常用命令">
+<meta name="twitter:description" content="文件管理
+
+
+cat\(concatenate\)
+
+
+1
+
+
+cat [options] [file]
+
+
+
+  
+      
+          options
+          description
+      
+  
+  
+      
+          -n
+          显示行号，会在输出的每一行前加上行号
+      
+      
+          -b
+          显示行号，但只对非空行进行编号
+      
+      
+          -s
+          压缩连续的空行，只显示一个空行
+      
+      
+          -E
+          在每一行的末尾显示 $ 符号
+      
+      
+          -T
+          将 Tab 字符显示为 ^I
+      
+      
+          -v
+          显示一些非打印字符
+      
+  
+
+PS:
+
+以上的options是大小写不敏感的\(capital insensitive\)
+可以有多个file
+
+Example
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+
+    root@datacon-winterc:~/quickstart# touch filename #创建filename文件
+    root@datacon-winterc:~/quickstart# cat &gt; filename #把标准输入重定向到filename文件
+    test_message
+    ^C
+    root@datacon-winterc:~/quickstart# cat filename #查看filename文件
+    test_message
+    root@datacon-winterc:~/quickstart# cat /dev/null &gt; filename
+    #清空filename文件
+
+
+cat也可以用来制作/烧录镜像文件">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://github.alexsun.one/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Linux常用命令",
+      "item": "https://github.alexsun.one/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Linux常用命令",
+  "name": "Linux常用命令",
+  "description": "文件管理 cat\\(concatenate\\)\n1 cat [options] [file] options description -n 显示行号，会在输出的每一行前加上行号 -b 显示行号，但只对非空行进行编号 -s 压缩连续的空行，只显示一个空行 -E 在每一行的末尾显示 $ 符号 -T 将 Tab 字符显示为 ^I -v 显示一些非打印字符 PS:\n以上的options是大小写不敏感的\\(capital insensitive\\) 可以有多个file Example 1 2 3 4 5 6 7 8 root@datacon-winterc:~/quickstart# touch filename #创建filename文件 root@datacon-winterc:~/quickstart# cat \u0026gt; filename #把标准输入重定向到filename文件 test_message ^C root@datacon-winterc:~/quickstart# cat filename #查看filename文件 test_message root@datacon-winterc:~/quickstart# cat /dev/null \u0026gt; filename #清空filename文件 cat也可以用来制作/烧录镜像文件\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "文件管理 cat\\(concatenate\\)\n1 cat [options] [file] options description -n 显示行号，会在输出的每一行前加上行号 -b 显示行号，但只对非空行进行编号 -s 压缩连续的空行，只显示一个空行 -E 在每一行的末尾显示 $ 符号 -T 将 Tab 字符显示为 ^I -v 显示一些非打印字符 PS:\n以上的options是大小写不敏感的\\(capital insensitive\\) 可以有多个file Example 1 2 3 4 5 6 7 8 root@datacon-winterc:~/quickstart# touch filename #创建filename文件 root@datacon-winterc:~/quickstart# cat \u003e filename #把标准输入重定向到filename文件 test_message ^C root@datacon-winterc:~/quickstart# cat filename #查看filename文件 test_message root@datacon-winterc:~/quickstart# cat /dev/null \u003e filename #清空filename文件 cat也可以用来制作/烧录镜像文件\n1 2 cat /dev/fd0 \u003e OUT.img cat OUT.img \u003e /dev/fd0 tar\n1 2 root@datacon-winterc:~/quickstart# tar --help Usage: tar [OPTION...] [FILE]... 1 2 3 4 touch a.c tar -czvf test.tar.gz a.c //压缩 a.c文件为test.tar.gz //-z for gzip 1 2 3 tar -tzvf test.tar.gz //列出压缩文件内容 tar -xzvf test.tar.gz a.c //解压文件 //-f for list, -x for extract ",
+  "wordCount" : "114",
+  "inLanguage": "en",
+  "datePublished": "2026-02-03T10:35:29+08:00",
+  "dateModified": "2026-02-03T10:35:29+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.alexsun.one/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alex's site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.alexsun.one/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
+            <a href="https://github.alexsun.one/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -228,22 +366,22 @@ cat也可以用来制作/烧录镜像文件">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home Page">
+                <a href="https://github.alexsun.one/" title="Home Page">
                     <span>Home Page</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories" title="Categories">
+                <a href="https://github.alexsun.one/categories" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags" title="Tags">
+                <a href="https://github.alexsun.one/tags" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://github.alexsun.one/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -431,12 +569,12 @@ cat也可以用来制作/烧录镜像文件">
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/available_prompts/">
+  <a class="prev" href="https://github.alexsun.one/posts/available_prompts/">
     <span class="title">« Prev</span>
     <br>
     <span>Available_prompts</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/">
+  <a class="next" href="https://github.alexsun.one/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/">
     <span class="title">Next »</span>
     <br>
     <span>20260202语法填空</span>
@@ -448,7 +586,7 @@ cat也可以用来制作/烧录镜像文件">
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Alex&#39;s site</a></span> · 
+        <span>&copy; 2026 <a href="https://github.alexsun.one/">Alex&#39;s site</a></span> · 
 
     <span>
         Powered by
