@@ -2,17 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>每日艺题 on Alex&#39;s site</title>
-    <link>//192.168.0.103:1313/categories/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98/</link>
+    <link>https://github.alexsun.one/categories/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98/</link>
     <description>Recent content in 每日艺题 on Alex&#39;s site</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 17:31:25 +0800</lastBuildDate>
-    <atom:link href="//192.168.0.103:1313/categories/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Feb 2026 16:54:26 +0800</lastBuildDate>
+    <atom:link href="https://github.alexsun.one/categories/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每日艺题 DAY002</title>
+      <link>https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day002/</link>
+      <pubDate>Thu, 12 Feb 2026 16:54:26 +0800</pubDate>
+      <guid>https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day002/</guid>
+      <description>$$
+\begin{gather}
+a_nS_n=\cfrac{1}{4^n},a_1&gt;0,求a_n.
+\end{gather}
+$$&lt;h2 id=&#34;attempt1&#34;&gt;Attempt1:&lt;/h2&gt;
+$$
+\begin{gather}
+消去S_n:S_n=\cfrac{1}{a_n4^n}\\
+S_{n+1}=\cfrac{1}{a_{n+1}4^{n+1}}\\
+a_{n+1}=\cfrac{1}{4^{n+1}}({\cfrac{1}{a_{n+1}}-\cfrac{4}{a_n}})\\
+=\cfrac{1}{4^{n+1}}({\cfrac{a_{n}-4a_{n+1}}{a_na_{n+1}}})
+\end{gather}
+$$&lt;p&gt;这样的形式还是太复杂了,遂放弃.&lt;/p&gt;
+&lt;h2 id=&#34;attempt2&#34;&gt;Attempt2:&lt;/h2&gt;
+$$
+\begin{gather}
+消a_n:(S_{n}-S_{n-1})S_n=\cfrac{1}{4^n}\\
+可以把\cfrac{1}{4^n}“雨露均沾”分给两个因式\\
+令b_n=2^nS_n,有:\\
+(b_{n}-2b_{n-1})b_n=1\\
+即:{b_n}^2-2b_{n-1}b_n=1\\
+从b_{n-1}到b_n比较困难,需要用求根公式,\\
+何不反其道而行之?\\
+b_{n-1}=\cfrac{{b_n}^2-1}{2b_n}\\
+我们惊喜的发现,式子的形式类似于正切二倍角公式:\\
+遂令c_n=\cfrac{1}{b_n}=tan(θ_n)&gt;0(θ_n&gt;0),\\
+tan(θ_{n-1})=c_{n-1}=\cfrac{2b_n}{{b_n}^2-1}=\cfrac{2c_n}{1-{c_n}^2}=tan(2θ_n)\\
+于是θ_n=\cfrac{θ_{n-1}}{2},我们便构建了从n-1到n的递推.\\
+S_1=a_1=\cfrac{1}{2},b_1=1,c_1=1=tan(θ_1).\\
+则θ_1=\cfrac{π}{4},θ_n=\cfrac{π}{2^{n+1}}.
+S_n=\cfrac{b_n}{2^n}=\cfrac{1}{2^nc_n}=\cfrac{1}{2^ntan(\cfrac{π}{2^{n+1}})},\\
+a_n=S_n-S_{n-1}=\cfrac{1}{2^ntan(\cfrac{π}{2^{n+1}})}-\cfrac{1}{2^{n-1}tan(\cfrac{π}{2^{n}})}(n\ge 2)\\
+把tan写成cot就不会有定义域的问题:\\a_n=\cfrac{cot(\cfrac{π}{2^{n+1}})}{2^n}-\cfrac{cot(\cfrac{π}{2^{n}})}{2^{n-1}}(n\ge 1)
+\end{gather}
+$$</description>
+    </item>
     <item>
       <title>每日艺题 DAY001</title>
-      <link>//192.168.0.103:1313/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/</link>
+      <link>https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/</link>
       <pubDate>Tue, 10 Feb 2026 17:31:25 +0800</pubDate>
-      <guid>//192.168.0.103:1313/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/</guid>
+      <guid>https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/</guid>
       <description>&lt;h1 id=&#34;day001联袂数列无通项&#34;&gt;DAY001:\(S_{n},a_{n}\)联袂数列(无通项)&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;题目：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;

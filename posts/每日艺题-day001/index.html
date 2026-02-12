@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -56,7 +56,7 @@ if (!header) {
     </script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>每日艺题 DAY001 | Alex&#39;s site</title>
 <meta name="keywords" content="数学, 数列">
 <meta name="description" content="DAY001:\(S_{n},a_{n}\)联袂数列(无通项)
@@ -104,16 +104,16 @@ a_n &#43; S_n = a_n S_n \quad (n \in \mathbb{N}^*)
 不过大概可以看出,\(a_{3}\lt \cfrac{-\sqrt{2}&#43;\sqrt{18}}{2}=\sqrt{2}=a_{2}\lt a_{1} \),数列\(\{a_{n}\}\)是递减数列.
 这也比较符合直觉,\(a_{n}=\cfrac{S_{n}}{S_{n}-1}=1&#43;\cfrac{1}{S_{n}-1}\),而\(a_{n}\gt 0,S_{n}\)单调递增,那么\(a_{n}\)必然单调递减,并且始终大于1.">
 <meta name="author" content="">
-<link rel="canonical" href="//192.168.0.103:1313/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/">
+<link rel="canonical" href="https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.1917785420c0d356d2d1d6b533a8bdf08513d8ffcfa1c7c0261165259c79f8d8.css" integrity="sha256-GRd4VCDA01bS0da1M6i98IUT2P/PocfAJhFlJZx5&#43;Ng=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//192.168.0.103:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//192.168.0.103:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//192.168.0.103:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//192.168.0.103:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//192.168.0.103:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://github.alexsun.one/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.alexsun.one/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.alexsun.one/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.alexsun.one/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.alexsun.one/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//192.168.0.103:1313/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/">
+<link rel="alternate" hreflang="en" href="https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/">
 <noscript>
     <style>
         #theme-toggle,
@@ -165,13 +165,133 @@ a_n &#43; S_n = a_n S_n \quad (n \in \mathbb{N}^*)
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/">
+  <meta property="og:site_name" content="Alex&#39;s site">
+  <meta property="og:title" content="每日艺题 DAY001">
+  <meta property="og:description" content="DAY001:\(S_{n},a_{n}\)联袂数列(无通项) 题目：
+已知 \(\{a_n\}\) 是各项均为正数的无穷数列,其前 \(n\) 项和为 \(S_n\),且
+\[ a_n &#43; S_n = a_n S_n \quad (n \in \mathbb{N}^*) \]
+给出下列四个结论： ① \(a_2 = \sqrt{2}\)；
+② 存在一个正数 \(m_0\),使得对任意的 \(n \in \mathbb{N}^*\),都有 \(S_n &lt; m_0\)；
+③ 数列 \(\{a_n\}\) 单调递减；
+④ 对任意的 \(n \in \mathbb{N}^*\),\(n \geq 2\),都有 \(a_{n-1} &#43; a_{n&#43;1} &gt; 2a_n\)。
+其中所有正确结论的序号是___。 (SRC:北京101中2025-2026第一学期高三数学统练二)
+先算几项,寻找规律：
+n \(a_{n}\) 1 2 2 \(\sqrt{2}\) 3 \(\cfrac{-\sqrt{2}&#43;\sqrt{10&#43;4\sqrt{2}}}{2} \) 根据计算,①正确.
+到第三项,数列已经开始崩坏不好算了.
+可以预见的是,通项应该是没戏的.
+不过大概可以看出,\(a_{3}\lt \cfrac{-\sqrt{2}&#43;\sqrt{18}}{2}=\sqrt{2}=a_{2}\lt a_{1} \),数列\(\{a_{n}\}\)是递减数列.
+这也比较符合直觉,\(a_{n}=\cfrac{S_{n}}{S_{n}-1}=1&#43;\cfrac{1}{S_{n}-1}\),而\(a_{n}\gt 0,S_{n}\)单调递增,那么\(a_{n}\)必然单调递减,并且始终大于1.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-10T17:31:25+08:00">
+    <meta property="article:modified_time" content="2026-02-10T17:31:25+08:00">
+    <meta property="article:tag" content="数学">
+    <meta property="article:tag" content="数列">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="每日艺题 DAY001">
+<meta name="twitter:description" content="DAY001:\(S_{n},a_{n}\)联袂数列(无通项)
+题目：
+
+已知 \(\{a_n\}\) 是各项均为正数的无穷数列,其前 \(n\) 项和为 \(S_n\),且
+
+\[
+a_n &#43; S_n = a_n S_n \quad (n \in \mathbb{N}^*)
+\]
+给出下列四个结论：
+① \(a_2 = \sqrt{2}\)；
+② 存在一个正数 \(m_0\),使得对任意的 \(n \in \mathbb{N}^*\),都有 \(S_n &lt; m_0\)；
+③ 数列 \(\{a_n\}\) 单调递减；
+④ 对任意的 \(n \in \mathbb{N}^*\),\(n \geq 2\),都有 \(a_{n-1} &#43; a_{n&#43;1} &gt; 2a_n\)。
+其中所有正确结论的序号是___。
+(SRC:北京101中2025-2026第一学期高三数学统练二)
+
+先算几项,寻找规律：
+
+  
+      
+          n
+          \(a_{n}\)
+      
+  
+  
+      
+          1
+          2
+      
+      
+          2
+          \(\sqrt{2}\)
+      
+      
+          3
+          \(\cfrac{-\sqrt{2}&#43;\sqrt{10&#43;4\sqrt{2}}}{2} \)
+      
+  
+
+根据计算,①正确.
+到第三项,数列已经开始崩坏不好算了.
+可以预见的是,通项应该是没戏的.
+不过大概可以看出,\(a_{3}\lt \cfrac{-\sqrt{2}&#43;\sqrt{18}}{2}=\sqrt{2}=a_{2}\lt a_{1} \),数列\(\{a_{n}\}\)是递减数列.
+这也比较符合直觉,\(a_{n}=\cfrac{S_{n}}{S_{n}-1}=1&#43;\cfrac{1}{S_{n}-1}\),而\(a_{n}\gt 0,S_{n}\)单调递增,那么\(a_{n}\)必然单调递减,并且始终大于1.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://github.alexsun.one/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "每日艺题 DAY001",
+      "item": "https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "每日艺题 DAY001",
+  "name": "每日艺题 DAY001",
+  "description": "DAY001:\\(S_{n},a_{n}\\)联袂数列(无通项) 题目：\n已知 \\(\\{a_n\\}\\) 是各项均为正数的无穷数列,其前 \\(n\\) 项和为 \\(S_n\\),且\n\\[ a_n + S_n = a_n S_n \\quad (n \\in \\mathbb{N}^*) \\]\n给出下列四个结论： ① \\(a_2 = \\sqrt{2}\\)；\n② 存在一个正数 \\(m_0\\),使得对任意的 \\(n \\in \\mathbb{N}^*\\),都有 \\(S_n \u003c m_0\\)；\n③ 数列 \\(\\{a_n\\}\\) 单调递减；\n④ 对任意的 \\(n \\in \\mathbb{N}^*\\),\\(n \\geq 2\\),都有 \\(a_{n-1} + a_{n+1} \u003e 2a_n\\)。\n其中所有正确结论的序号是___。 (SRC:北京101中2025-2026第一学期高三数学统练二)\n先算几项,寻找规律：\nn \\(a_{n}\\) 1 2 2 \\(\\sqrt{2}\\) 3 \\(\\cfrac{-\\sqrt{2}+\\sqrt{10+4\\sqrt{2}}}{2} \\) 根据计算,①正确.\n到第三项,数列已经开始崩坏不好算了.\n可以预见的是,通项应该是没戏的.\n不过大概可以看出,\\(a_{3}\\lt \\cfrac{-\\sqrt{2}+\\sqrt{18}}{2}=\\sqrt{2}=a_{2}\\lt a_{1} \\),数列\\(\\{a_{n}\\}\\)是递减数列.\n这也比较符合直觉,\\(a_{n}=\\cfrac{S_{n}}{S_{n}-1}=1+\\cfrac{1}{S_{n}-1}\\),而\\(a_{n}\\gt 0,S_{n}\\)单调递增,那么\\(a_{n}\\)必然单调递减,并且始终大于1.\n",
+  "keywords": [
+    "数学", "数列"
+  ],
+  "articleBody": "DAY001:\\(S_{n},a_{n}\\)联袂数列(无通项) 题目：\n已知 \\(\\{a_n\\}\\) 是各项均为正数的无穷数列,其前 \\(n\\) 项和为 \\(S_n\\),且\n\\[ a_n + S_n = a_n S_n \\quad (n \\in \\mathbb{N}^*) \\]\n给出下列四个结论： ① \\(a_2 = \\sqrt{2}\\)；\n② 存在一个正数 \\(m_0\\),使得对任意的 \\(n \\in \\mathbb{N}^*\\),都有 \\(S_n \u003c m_0\\)；\n③ 数列 \\(\\{a_n\\}\\) 单调递减；\n④ 对任意的 \\(n \\in \\mathbb{N}^*\\),\\(n \\geq 2\\),都有 \\(a_{n-1} + a_{n+1} \u003e 2a_n\\)。\n其中所有正确结论的序号是___。 (SRC:北京101中2025-2026第一学期高三数学统练二)\n先算几项,寻找规律：\nn \\(a_{n}\\) 1 2 2 \\(\\sqrt{2}\\) 3 \\(\\cfrac{-\\sqrt{2}+\\sqrt{10+4\\sqrt{2}}}{2} \\) 根据计算,①正确.\n到第三项,数列已经开始崩坏不好算了.\n可以预见的是,通项应该是没戏的.\n不过大概可以看出,\\(a_{3}\\lt \\cfrac{-\\sqrt{2}+\\sqrt{18}}{2}=\\sqrt{2}=a_{2}\\lt a_{1} \\),数列\\(\\{a_{n}\\}\\)是递减数列.\n这也比较符合直觉,\\(a_{n}=\\cfrac{S_{n}}{S_{n}-1}=1+\\cfrac{1}{S_{n}-1}\\),而\\(a_{n}\\gt 0,S_{n}\\)单调递增,那么\\(a_{n}\\)必然单调递减,并且始终大于1.\n这样，便可以确定③正确.\n由以上推理,有\\(a_{n}\\gt 1\\),那么\\(S_{n}\\)显然没有上界，②错误.\n④等价于 $$ a_{n-1}-a_{n}\\gt a_{n}-a_{n+1}\\gt 0 $$ 即\\(a_{n}\\)递减的速度越来越慢,这也是合理的,毕竟\\(a_{n}\\)有下界1.\n我们下面消去\\(S_{n}\\),证明这一点: $$ \\begin{gather} S_{n}=1+\\cfrac{1}{a_{n}-1}\\\\ S_{n+1}=1+\\cfrac{1}{a_{n+1}-1}\\\\ (为什么写成这样的形式?\\\\分式相减可以让分母相减,\\\\分离常数可以让常数抵消)\\\\ a_{n+1}=-\\cfrac{1}{a_{n}-1}+\\cfrac{1}{a_{n+1}-1}\\\\ =\\cfrac{a_{n}-a_{n+1}}{(a_{n}-1)(a_{n+1}-1)}\\\\ a_{n}-a_{n+1}=(a_{n}-1)(a_{n+1}-1)a_{n+1} ①\\\\ a_{n-1}-a_{n}=(a_{n-1}-1)(a_{n}-1)a_{n} ②\\\\ 显然有②\\gt ①\\\\ Q.E.D \\end{gather} $$ 不注意到分离常数的好处,证明④就比较困难:\n贴一下AI(Grok)的证明:\nTo prove that \\(a_{n-1} + a_{n+1} \u003e 2a_n\\) for all \\(n \\geq 2\\), introduce the auxiliary sequence \\(c_k = a_k - 1\\) for \\(k \\in \\mathbb{N}^*\\). Since \\(a_k \u003e 1\\) (as seen from the explicit terms and the form \\(a_k = 1 + \\frac{2}{\\sqrt{S_{k-1}^2 + 4} + S_{k-1}} \u003e 1\\)), it follows that \\(c_k \u003e 0\\).\nThe inequality \\(a_{n-1} + a_{n+1} \u003e 2a_n\\) is equivalent to \\(c_{n-1} + c_{n+1} \u003e 2c_n\\).\nDefine the function \\(g(x) = \\frac{\\sqrt{x^2 + 4} - x}{2}\\) for \\(x \u003e 1\\) (noting \\(S_k \u003e 1\\)). Then \\(c_k = g(S_{k-1})\\), so the inequality becomes \\(g(S_{n-2}) + g(S_n) \u003e 2g(S_{n-1})\\).\nThe function \\(g(x)\\) is strictly decreasing (\\(g'(x) \u003c 0\\)) and strictly convex (\\(g''(x) \u003e 0\\)), as verified by computing the derivatives:\n\\(g'(x) = - \\frac{2(1 + \\frac{x}{\\sqrt{x^2 + 4}})}{(x + \\sqrt{x^2 + 4})^2} \u003c 0\\), \\(g''(x) \u003e 0\\) (detailed calculation shows the numerator \\(2h^2 - h'd \u003e 0\\), where \\(h(x) = 1 + \\frac{x}{\\sqrt{x^2 + 4}}\\), \\(h'(x) = \\frac{4}{(x^2 + 4)^{3/2}}\\), and \\(d = x + \\sqrt{x^2 + 4}\\)). Since \\(\\{a_k\\}\\) is strictly decreasing (\\(a_k \u003e a_{k+1} \u003e 1\\)), the partial sums satisfy \\(S_n - S_{n-1} = a_n \u003c a_{n-1} = S_{n-1} - S_{n-2}\\), so \\(\\frac{S_{n-2} + S_n}{2} \u003c S_{n-1}\\).\nBy strict convexity of \\(g\\), \\(g\\left(\\frac{S_{n-2} + S_n}{2}\\right) \u003c \\frac{g(S_{n-2}) + g(S_n)}{2}\\) (strict since \\(S_{n-2} \u003c S_n\\)).\nSince \\(g\\) is strictly decreasing and \\(\\frac{S_{n-2} + S_n}{2} \u003c S_{n-1}\\), it follows that \\(g\\left(\\frac{S_{n-2} + S_n}{2}\\right) \u003e g(S_{n-1})\\).\nCombining these, \\(\\frac{g(S_{n-2}) + g(S_n)}{2} \u003e g\\left(\\frac{S_{n-2} + S_n}{2}\\right) \u003e g(S_{n-1})\\), so \\(g(S_{n-2}) + g(S_n) \u003e 2g(S_{n-1})\\).\nThus, the inequality holds strictly for all \\(n \\geq 2\\). 函数凹凸性都出来了,反正逆天程度是超出人类想象的D:\nDeepSeek和Grok都不约而同的构造了\\(a_{n}-1\\)作为辅助数列,何意味.\n拓展研究: \\(a_{n}\\)是否能无限接近1?\n这从直觉上讲是完全合乎理性的.\n补充一个引理(Lemma):\n单调有界定理（Monotone Convergence Theorem）是实数系完备性的一个重要体现，包括两个部分：\n1. 单调递增有上界数列收敛 若数列 \\(\\{a_n\\}\\) 满足：\n单调递增：\\(a_n \\leq a_{n+1}\\) 对所有 \\(n \\in \\mathbb{N}^*\\) 成立 有上界：存在实数 \\(M\\)，使得 \\(a_n \\leq M\\) 对所有 \\(n\\) 成立 则 \\(\\{a_n\\}\\) 收敛，且 \\[ \\lim_{n \\to \\infty} a_n = \\sup\\{a_n : n \\in \\mathbb{N}^*\\} \\] 2. 单调递减有下界数列收敛 若数列 \\(\\{a_n\\}\\) 满足：\n单调递减：\\(a_n \\geq a_{n+1}\\) 对所有 \\(n \\in \\mathbb{N}^*\\) 成立 有下界：存在实数 \\(m\\)，使得 \\(a_n \\geq m\\) 对所有 \\(n\\) 成立 则 \\(\\{a_n\\}\\) 收敛，且 \\[ \\lim_{n \\to \\infty} a_n = \\inf\\{a_n : n \\in \\mathbb{N}^*\\} \\] PS:这里sup,inf分别是上确界和下确界的意思 在101中的这道题目中,\\(a_{n}\\)有下界1,且单调递减,那么肯定存在极限.\n直接证明极限为1比较困难,我们不妨使用反证法: $$ \\begin{gather} 设\\lim_{n \\to \\infty} a_{n}=L\\\\ 假设L\\gt 1\\\\ a_{N}=1+\\cfrac{1}{S_{N}-1}\\\\ 取N=1+\\cfrac{1}{L-1},S_{N}\\gt NL\\gt N\\\\ a_{N}\\lt 1+\\cfrac{1}{N-1}=L \\\\推出矛盾!\\\\ 又L\\ge 1,一定有L=1\\\\ Q.E.D \\end{gather} $$旁征博引 题目：\n已知数列 \\(\\{a_n\\}\\) 的各项均为正数，其前 \\(n\\) 项和为 \\(S_n\\)，满足\n\\[ a_n \\cdot S_n = 9 \\quad (n=1,2,\\dots) \\]\n给出下列四个结论： ① \\(\\{a_n\\}\\) 的第 2 项小于 3；\n② \\(\\{a_n\\}\\) 为等比数列；\n③ \\(\\{a_n\\}\\) 为递减数列；\n④ \\(\\{a_n\\}\\) 中存在小于 \\(\\frac{1}{100}\\) 的项。\n其中所有正确结论的序号是______。 (2022北京卷T15)\n我们并不关心①②③,这是非常容易判断的,重点在于④: $$ \\begin{gather} S_{n}=\\cfrac{9}{a_{n}}\\\\ S_{n+1}=\\cfrac{9}{a_{n+1}}\\\\ a_{n+1}=\\cfrac{9(a_{n}-a_{n+1})}{a_{n}a_{n+1}}(♣)\\\\ 由于数列 \\{a_n\\} 的各项均为正数,显然有a_{n}-a_{n+1}\u003e0\\\\ 则a_{n}是递减数列,且有下界1\\\\ 应用单调有界定理,知a_{n}存在极限L\\\\ 对♣等式左右两边求极限:\\\\ L=\\cfrac{9(L-L)}{L^2}=0\\\\ 那么对于足够大的n,a_n可以无限接近于0,④显然错误 \\end{gather} $$ 已知 \\(\\{a_n\\}\\) 是各项均为正数的无穷数列，其前 \\(n\\) 项和为\n\\[ S_n, \\text{且} \\frac{1}{a_n} + \\frac{1}{S_n} = 1 \\ (n \\in \\mathbb{N}^*). \\]\n给出下列四个结论：\n① \\(a_1 + a_3 \u003e 2a_2\\);\n② \\(\\exists n_0 \\in \\mathbb{N}^*\\)，使得 \\(a_{n_0} \u003c \\dfrac{2025}{2024}\\);\n③ 存在一个正数 \\(m_0\\)，使得对任意的 \\(n \\in \\mathbb{N}^*\\)，都有 \\(S_n \u003c m_0\\);\n④ 对任意的 \\(n \\in \\mathbb{N}^*\\)，\\(n \\geq 2\\)，都有 \\(S_{n-1} + S_{n+1} \u003c 2S_n\\).\n其中所有正确结论的序号是 ___. (出处不详,遇强则强)\n由以上的分析,可以做出初步判断:\n①②正确,③错误\n④等价于\\(a_{n+1}\\lt a_{n}\\),这就是第一题的③,所以④也正确.\n综上,选\\(\\boxed{①②④}\\)\n小结 莫让浮云遮望眼,撩开雾纱见真颜\n即便面对扑朔迷离,不可求通项的数列,我们也有一套可行的解题方法(函数与极限).\n",
+  "wordCount" : "586",
+  "inLanguage": "en",
+  "datePublished": "2026-02-10T17:31:25+08:00",
+  "dateModified": "2026-02-10T17:31:25+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alex's site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.alexsun.one/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="//192.168.0.103:1313/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
+            <a href="https://github.alexsun.one/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -197,22 +317,22 @@ a_n &#43; S_n = a_n S_n \quad (n \in \mathbb{N}^*)
         </div>
         <ul id="menu">
             <li>
-                <a href="//192.168.0.103:1313/" title="Home Page">
+                <a href="https://github.alexsun.one/" title="Home Page">
                     <span>Home Page</span>
                 </a>
             </li>
             <li>
-                <a href="//192.168.0.103:1313/categories" title="Categories">
+                <a href="https://github.alexsun.one/categories" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="//192.168.0.103:1313/tags" title="Tags">
+                <a href="https://github.alexsun.one/tags" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="//192.168.0.103:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://github.alexsun.one/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -457,16 +577,16 @@ $$<blockquote>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="//192.168.0.103:1313/tags/%E6%95%B0%E5%AD%A6/">数学</a></li>
-      <li><a href="//192.168.0.103:1313/tags/%E6%95%B0%E5%88%97/">数列</a></li>
+      <li><a href="https://github.alexsun.one/tags/%E6%95%B0%E5%AD%A6/">数学</a></li>
+      <li><a href="https://github.alexsun.one/tags/%E6%95%B0%E5%88%97/">数列</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="//192.168.0.103:1313/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day002/">
+  <a class="prev" href="https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day002/">
     <span class="title">« Prev</span>
     <br>
     <span>每日艺题 DAY002</span>
   </a>
-  <a class="next" href="//192.168.0.103:1313/posts/http_response_status_code/">
+  <a class="next" href="https://github.alexsun.one/posts/http_response_status_code/">
     <span class="title">Next »</span>
     <br>
     <span>HTTP状态码</span>
@@ -478,7 +598,7 @@ $$<blockquote>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="//192.168.0.103:1313/">Alex&#39;s site</a></span> · 
+        <span>&copy; 2026 <a href="https://github.alexsun.one/">Alex&#39;s site</a></span> · 
 
     <span>
         Powered by

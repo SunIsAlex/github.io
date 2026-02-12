@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>网络 on Alex&#39;s site</title>
-    <link>//192.168.0.103:1313/categories/%E7%BD%91%E7%BB%9C/</link>
+    <link>https://github.alexsun.one/categories/%E7%BD%91%E7%BB%9C/</link>
     <description>Recent content in 网络 on Alex&#39;s site</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Feb 2026 10:51:13 +0800</lastBuildDate>
-    <atom:link href="//192.168.0.103:1313/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://github.alexsun.one/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTP状态码</title>
-      <link>//192.168.0.103:1313/posts/http_response_status_code/</link>
+      <link>https://github.alexsun.one/posts/http_response_status_code/</link>
       <pubDate>Fri, 06 Feb 2026 10:51:13 +0800</pubDate>
-      <guid>//192.168.0.103:1313/posts/http_response_status_code/</guid>
+      <guid>https://github.alexsun.one/posts/http_response_status_code/</guid>
       <description>&lt;p&gt;以下是用简体中文整理的 &lt;strong&gt;HTTP 状态码&lt;/strong&gt; 介绍表格，按类别（1xx ~ 5xx）分类，包含最常用和比较重要的状态码，以及简洁说明。&lt;/p&gt;
 &lt;h3 id=&#34;http-状态码分类总览&#34;&gt;HTTP 状态码分类总览&lt;/h3&gt;
 &lt;table&gt;
@@ -271,9 +271,9 @@
     </item>
     <item>
       <title>Nginx安全配置</title>
-      <link>//192.168.0.103:1313/posts/nginx_conf/</link>
+      <link>https://github.alexsun.one/posts/nginx_conf/</link>
       <pubDate>Thu, 05 Feb 2026 10:47:08 +0800</pubDate>
-      <guid>//192.168.0.103:1313/posts/nginx_conf/</guid>
+      <guid>https://github.alexsun.one/posts/nginx_conf/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -326,9 +326,9 @@
     </item>
     <item>
       <title>Available_prompts</title>
-      <link>//192.168.0.103:1313/posts/available_prompts/</link>
+      <link>https://github.alexsun.one/posts/available_prompts/</link>
       <pubDate>Wed, 04 Feb 2026 22:59:20 +0800</pubDate>
-      <guid>//192.168.0.103:1313/posts/available_prompts/</guid>
+      <guid>https://github.alexsun.one/posts/available_prompts/</guid>
       <description>&lt;p&gt;以下是一些AI越狱的提示词(由Grok生成)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Author:Grok&lt;/li&gt;

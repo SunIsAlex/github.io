@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -56,7 +56,7 @@ if (!header) {
     </script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Nginx安全配置 | Alex&#39;s site</title>
 <meta name="keywords" content="Linux, nginx">
 <meta name="description" content="
@@ -109,16 +109,16 @@ location [modifier] [URI] {
 
 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。">
 <meta name="author" content="">
-<link rel="canonical" href="//192.168.0.103:1313/posts/nginx_conf/">
+<link rel="canonical" href="https://github.alexsun.one/posts/nginx_conf/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.1917785420c0d356d2d1d6b533a8bdf08513d8ffcfa1c7c0261165259c79f8d8.css" integrity="sha256-GRd4VCDA01bS0da1M6i98IUT2P/PocfAJhFlJZx5&#43;Ng=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//192.168.0.103:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//192.168.0.103:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//192.168.0.103:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//192.168.0.103:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//192.168.0.103:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://github.alexsun.one/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.alexsun.one/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.alexsun.one/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.alexsun.one/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.alexsun.one/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//192.168.0.103:1313/posts/nginx_conf/">
+<link rel="alternate" hreflang="en" href="https://github.alexsun.one/posts/nginx_conf/">
 <noscript>
     <style>
         #theme-toggle,
@@ -170,13 +170,126 @@ location [modifier] [URI] {
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://github.alexsun.one/posts/nginx_conf/">
+  <meta property="og:site_name" content="Alex&#39;s site">
+  <meta property="og:title" content="Nginx安全配置">
+  <meta property="og:description" content=" 1 2 root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log access_log /var/log/nginx/access.log; #nginx访问日志文件 1 2 grep wp-admin /var/log/nginx/access.log | cat -n #查看日志中含wp-admin(wordpress后台)的内容 1 2 3 1 162.158.182.84 - - [05/Feb/2026:00:05:25 &#43;0800] &#34;GET /wordpress/wp-admin/setup-config.php HTTP/1.1&#34; 404 134 &#34;-&#34; &#34;https://alexsun.one/wordpress/wp-admin/setup-config.php&#34; ...... 73 172.71.184.188 - - [05/Feb/2026:10:49:11 &#43;0800] &#34;GET /wp-admin/setup-config.php HTTP/1.1&#34; 444 0 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36&#34; 我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1 用nginx的location可以配置路由，实现对恶意扫描的处理：
+1 2 3 location [modifier] [URI] { } 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-05T10:47:08+08:00">
+    <meta property="article:modified_time" content="2026-02-05T10:47:08+08:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Nginx">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nginx安全配置">
+<meta name="twitter:description" content="
+
+1
+2
+
+
+root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log
+access_log /var/log/nginx/access.log; #nginx访问日志文件
+
+
+
+
+1
+2
+
+
+grep wp-admin /var/log/nginx/access.log | cat -n
+#查看日志中含wp-admin(wordpress后台)的内容
+
+
+
+
+1
+2
+3
+
+
+1  162.158.182.84 - - [05/Feb/2026:00:05:25 &#43;0800] &#34;GET /wordpress/wp-admin/setup-config.php HTTP/1.1&#34; 404 134 &#34;-&#34; &#34;https://alexsun.one/wordpress/wp-admin/setup-config.php&#34;
+......
+73  172.71.184.188 - - [05/Feb/2026:10:49:11 &#43;0800] &#34;GET /wp-admin/setup-config.php HTTP/1.1&#34; 444 0 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36&#34;
+
+
+我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1
+
+用nginx的location可以配置路由，实现对恶意扫描的处理：
+
+
+1
+2
+3
+
+
+location [modifier] [URI] {
+
+}
+
+
+
+下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://github.alexsun.one/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Nginx安全配置",
+      "item": "https://github.alexsun.one/posts/nginx_conf/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Nginx安全配置",
+  "name": "Nginx安全配置",
+  "description": " 1 2 root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log access_log /var/log/nginx/access.log; #nginx访问日志文件 1 2 grep wp-admin /var/log/nginx/access.log | cat -n #查看日志中含wp-admin(wordpress后台)的内容 1 2 3 1 162.158.182.84 - - [05/Feb/2026:00:05:25 +0800] \u0026#34;GET /wordpress/wp-admin/setup-config.php HTTP/1.1\u0026#34; 404 134 \u0026#34;-\u0026#34; \u0026#34;https://alexsun.one/wordpress/wp-admin/setup-config.php\u0026#34; ...... 73 172.71.184.188 - - [05/Feb/2026:10:49:11 +0800] \u0026#34;GET /wp-admin/setup-config.php HTTP/1.1\u0026#34; 444 0 \u0026#34;-\u0026#34; \u0026#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\u0026#34; 我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1 用nginx的location可以配置路由，实现对恶意扫描的处理：\n1 2 3 location [modifier] [URI] { } 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。\n",
+  "keywords": [
+    "Linux", "nginx"
+  ],
+  "articleBody": " 1 2 root@datacon-winterc:~/quickstart# cat /etc/nginx/nginx.conf | grep access_log access_log /var/log/nginx/access.log; #nginx访问日志文件 1 2 grep wp-admin /var/log/nginx/access.log | cat -n #查看日志中含wp-admin(wordpress后台)的内容 1 2 3 1 162.158.182.84 - - [05/Feb/2026:00:05:25 +0800] \"GET /wordpress/wp-admin/setup-config.php HTTP/1.1\" 404 134 \"-\" \"https://alexsun.one/wordpress/wp-admin/setup-config.php\" ...... 73 172.71.184.188 - - [05/Feb/2026:10:49:11 +0800] \"GET /wp-admin/setup-config.php HTTP/1.1\" 444 0 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\" 我的站点上并没有安装WordPress，以上73条访问日志来自于恶意扫描1 用nginx的location可以配置路由，实现对恶意扫描的处理：\n1 2 3 location [modifier] [URI] { } 下面下面是 Nginx 中 location 指令最常用的几种匹配方式（modifier）的语法总结，以表格形式呈现，便于对照和记忆。\n优先级 Modifier（修饰符） 匹配类型 大小写敏感 说明 示例 典型使用场景 1 = 精确匹配 是 必须完全相等（包括结尾斜杠），一旦命中立即停止搜索其他 location location = / location = /index.html favicon.ico、首页、特定静态文件 2 ^~ 前缀匹配（优先） 是 前缀匹配，命中后不再检查正则 location（最长前缀优先） location ^~ /wp- location ^~ /images/ 屏蔽扫描路径、静态资源目录 3 ~ 正则匹配 是（区分） 正则表达式匹配，区分大小写，按配置文件出现顺序逐个尝试 location ~ \\.php$ location ~ ^/admin 处理 .php 文件、特定路径规则 4 ~* 正则匹配（忽略大小写） 否 正则表达式匹配，不区分大小写，按配置文件出现顺序逐个尝试 `location ~* .(jpg png 5 （无修饰符） 前缀匹配（普通） 是 普通前缀匹配，匹配最长前缀后继续尝试正则（除非被 ^~ 阻止） location / location /blog/ 默认根路径、子目录兜底 特殊 @name 命名 location — 内部跳转使用，不能直接被外部请求命中 location @fallback { ... } error_page 跳转、try_files 内部重定向 1 2 3 4 5 6 # 屏蔽常见的 WordPress 扫描路径（可放在 server {} 内或 include 到所有 server） location ~* ^/(wp-admin|wp-login\\.php|wp-config\\.php|xmlrpc\\.php|readme\\.html|license\\.txt|wp-signup\\.php|setup-config\\.php) { # return HTTP_RESPONSE_CODE # 或者用 return 403; 但 444 更省资源 return 444; } 关于HTTP状态码，详见HTTP_RESPONSE_STATUS_CODE\n更加简单粗暴的解决方案：\n1 2 3 location ~ (php|aspx|git|python) { return 444; } 如果访问这些路径，服务器断开连接，则配置成功\n1 2 root@datacon-winterc:~/quickstart# curl -i https://www.alexsun.one/index.php curl: (52) Empty reply from server 自动化扫描行为（reconnaissance scanning），不是针对你个人的攻击，而是几乎所有暴露在公网的服务器都会遇到的“噪音”。 ↩︎\n",
+  "wordCount" : "218",
+  "inLanguage": "en",
+  "datePublished": "2026-02-05T10:47:08+08:00",
+  "dateModified": "2026-02-05T10:47:08+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.alexsun.one/posts/nginx_conf/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alex's site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.alexsun.one/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="//192.168.0.103:1313/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
+            <a href="https://github.alexsun.one/" accesskey="h" title="Alex&#39;s site (Alt + H)">Alex&#39;s site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -202,22 +315,22 @@ location [modifier] [URI] {
         </div>
         <ul id="menu">
             <li>
-                <a href="//192.168.0.103:1313/" title="Home Page">
+                <a href="https://github.alexsun.one/" title="Home Page">
                     <span>Home Page</span>
                 </a>
             </li>
             <li>
-                <a href="//192.168.0.103:1313/categories" title="Categories">
+                <a href="https://github.alexsun.one/categories" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="//192.168.0.103:1313/tags" title="Tags">
+                <a href="https://github.alexsun.one/tags" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="//192.168.0.103:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://github.alexsun.one/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -429,16 +542,16 @@ location [modifier] [URI] {
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="//192.168.0.103:1313/tags/linux/">Linux</a></li>
-      <li><a href="//192.168.0.103:1313/tags/nginx/">Nginx</a></li>
+      <li><a href="https://github.alexsun.one/tags/linux/">Linux</a></li>
+      <li><a href="https://github.alexsun.one/tags/nginx/">Nginx</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="//192.168.0.103:1313/posts/http_response_status_code/">
+  <a class="prev" href="https://github.alexsun.one/posts/http_response_status_code/">
     <span class="title">« Prev</span>
     <br>
     <span>HTTP状态码</span>
   </a>
-  <a class="next" href="//192.168.0.103:1313/posts/available_prompts/">
+  <a class="next" href="https://github.alexsun.one/posts/available_prompts/">
     <span class="title">Next »</span>
     <br>
     <span>Available_prompts</span>
@@ -450,7 +563,7 @@ location [modifier] [URI] {
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="//192.168.0.103:1313/">Alex&#39;s site</a></span> · 
+        <span>&copy; 2026 <a href="https://github.alexsun.one/">Alex&#39;s site</a></span> · 
 
     <span>
         Powered by

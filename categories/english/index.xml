@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>English on Alex&#39;s site</title>
-    <link>//192.168.0.103:1313/categories/english/</link>
+    <link>https://github.alexsun.one/categories/english/</link>
     <description>Recent content in English on Alex&#39;s site</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Feb 2026 22:17:46 +0800</lastBuildDate>
-    <atom:link href="//192.168.0.103:1313/categories/english/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://github.alexsun.one/categories/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>20260202语法填空</title>
-      <link>//192.168.0.103:1313/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/</link>
+      <link>https://github.alexsun.one/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/</link>
       <pubDate>Mon, 02 Feb 2026 22:17:46 +0800</pubDate>
-      <guid>//192.168.0.103:1313/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/</guid>
+      <guid>https://github.alexsun.one/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/</guid>
       <description>&lt;p&gt;1.with&lt;/p&gt;
 &lt;p&gt;2.invite&lt;/p&gt;
 &lt;p&gt;4.which&lt;/p&gt;

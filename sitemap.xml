@@ -2,81 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//192.168.0.103:1313/posts/aboutthissite/</loc>
+    <loc>https://github.alexsun.one/posts/aboutthissite/</loc>
     <lastmod>2026-02-02T16:36:28+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/</loc>
+    <loc>https://github.alexsun.one/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/posts/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/tags/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/tags/%E6%95%B0%E5%88%97/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/tags/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/categories/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day002/</loc>
+    <lastmod>2026-02-12T16:54:26+08:00</lastmod>
+  </url><url>
+    <loc>https://github.alexsun.one/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/</loc>
     <lastmod>2026-02-10T17:31:25+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/</loc>
-    <lastmod>2026-02-10T17:31:25+08:00</lastmod>
-  </url><url>
-    <loc>//192.168.0.103:1313/tags/</loc>
-    <lastmod>2026-02-10T17:31:25+08:00</lastmod>
-  </url><url>
-    <loc>//192.168.0.103:1313/tags/%E6%95%B0%E5%88%97/</loc>
-    <lastmod>2026-02-10T17:31:25+08:00</lastmod>
-  </url><url>
-    <loc>//192.168.0.103:1313/tags/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2026-02-10T17:31:25+08:00</lastmod>
-  </url><url>
-    <loc>//192.168.0.103:1313/categories/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98/</loc>
-    <lastmod>2026-02-10T17:31:25+08:00</lastmod>
-  </url><url>
-    <loc>//192.168.0.103:1313/posts/%E6%AF%8F%E6%97%A5%E8%89%BA%E9%A2%98-day001/</loc>
-    <lastmod>2026-02-10T17:31:25+08:00</lastmod>
-  </url><url>
-    <loc>//192.168.0.103:1313/posts/http_response_status_code/</loc>
+    <loc>https://github.alexsun.one/posts/http_response_status_code/</loc>
     <lastmod>2026-02-06T10:51:13+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
+    <loc>https://github.alexsun.one/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
     <lastmod>2026-02-06T10:51:13+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://github.alexsun.one/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2026-02-06T10:51:13+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/tags/linux/</loc>
+    <loc>https://github.alexsun.one/tags/linux/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/categories/linux%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://github.alexsun.one/categories/linux%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/tags/nginx/</loc>
+    <loc>https://github.alexsun.one/tags/nginx/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/nginx_conf/</loc>
+    <loc>https://github.alexsun.one/posts/nginx_conf/</loc>
     <lastmod>2026-02-05T10:47:08+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/categories/ai/</loc>
+    <loc>https://github.alexsun.one/categories/ai/</loc>
     <lastmod>2026-02-04T22:59:20+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/available_prompts/</loc>
+    <loc>https://github.alexsun.one/posts/available_prompts/</loc>
     <lastmod>2026-02-04T22:59:20+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/</loc>
+    <loc>https://github.alexsun.one/posts/linux%CF%83%CF%84%C3%B6%CF%83%C3%A6%CF%83%C3%B1/</loc>
     <lastmod>2026-02-03T10:35:29+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/</loc>
+    <loc>https://github.alexsun.one/posts/20260202%CF%86%C2%B5%C3%B2%CF%83%C3%AD%CF%84/</loc>
     <lastmod>2026-02-02T22:17:46+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/categories/english/</loc>
+    <loc>https://github.alexsun.one/categories/english/</loc>
     <lastmod>2026-02-02T22:17:46+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/tags/hugo/</loc>
+    <loc>https://github.alexsun.one/tags/hugo/</loc>
     <lastmod>2026-02-02T16:36:28+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/markdown/</loc>
+    <loc>https://github.alexsun.one/posts/markdown/</loc>
     <lastmod>2026-02-02T15:49:00+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/basicmath/</loc>
+    <loc>https://github.alexsun.one/posts/basicmath/</loc>
     <lastmod>2026-02-02T15:01:08+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/categories/</loc>
+    <loc>https://github.alexsun.one/categories/</loc>
     <lastmod>2026-02-02T14:06:17+08:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/posts/hugo/</loc>
+    <loc>https://github.alexsun.one/posts/hugo/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//192.168.0.103:1313/search/</loc>
+    <loc>https://github.alexsun.one/search/</loc>
   </url>
 </urlset>
